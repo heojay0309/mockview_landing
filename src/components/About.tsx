@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const About = () => {
   return (
     <div id="about">
@@ -14,7 +12,6 @@ const About = () => {
                 stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                // className="w-4 h-4 ml-2"
               >
                 <path d="M15,0 L7,0"></path>
                 <path d="M15,5 L7,5"></path>
