@@ -1,26 +1,45 @@
+'use client';
 import Link from 'next/link';
+import { HiMenuAlt3 } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
 
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 const Navbar = () => {
+  const [bgClass, setBgClass] = useState('bg-transparent');
+  const [textClass, setTextClass] = useState('text-white');
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  const handleScroll = () => {
+    const isScrolledDown = window.scrollY > 1;
+    if (isScrolledDown) {
+      setBgClass('bg-white'); // Replace 'bg-new-color' with your scrolled Tailwind background color class
+      setTextClass('text-black');
+    } else {
+      setBgClass('bg-transparent'); // Reset to original Tailwind background color class
+      setTextClass('text-white');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="text-gray-400 bg-gray-900 body-font fixed w-screen">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header
+      className={`${textClass} transition-color duration-300 body-font fixed w-screen ${bgClass}`}
+    >
+      <div className="md:flex flex-wrap hidden md:flex-row items-center">
         <a
           href="#home"
-          className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+          className="flex title-font font-medium items-center mb-4 md:mb-0"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span className="ml-3 text-xl">MockView</span>
+          <Image src="/M.png" alt="logo" width={50} height={50} />
+          <span className=" text-xl">MockView</span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <a className="mr-5 hover:text-white" href="#home">
@@ -33,20 +52,48 @@ const Navbar = () => {
             CONTACT
           </a>
         </nav>
-        <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Explore
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+
+        <button className="inline-flex items-center bg-indigo-600 border-0 px-7 py-5 focus:outline-none hover:bg-indigo-500 text-white rounded text-base mt-0">
+          GET STARTED
         </button>
+      </div>
+
+      <div
+        className={`flex flex-col gap-3 justify-between bg-transparent hover:bg-white hover:text-black`}
+      >
+        <div className="md:hidden flex flex-row items-center justify-between p-2">
+          <a href="#home" className="flex title-font font-medium items-center ">
+            <Image src="/M.png" alt="logo" width={50} height={50} />
+            <span className=" text-xl">MockView</span>
+          </a>
+          <button onClick={() => setMenuToggle(!menuToggle)}>
+            {menuToggle ? (
+              <IoClose className="self-center" size={30} />
+            ) : (
+              <HiMenuAlt3 className="self-center" size={30} />
+            )}
+          </button>
+        </div>
+
+        {menuToggle && (
+          <div className="flex-1 flex flex-col w-full bg-white">
+            <nav className="flex flex-col text-xl font-bold justify-between gap-8 mb-16 mt-10 text-black">
+              <a className=" hover:text-indigo-600 pl-5" href="#home">
+                HOME
+              </a>
+              <a className=" hover:text-indigo-600 pl-5" href="#about">
+                ABOUT
+              </a>
+              <a className=" hover:text-indigo-600 pl-5" href="#contact">
+                CONTACT
+              </a>
+            </nav>
+
+            <button className=" items-center bg-indigo-600 border-0 px-7 py-5 focus:outline-none hover:bg-indigo-500 text-white text-base">
+              GET STARTED
+            </button>
+          </div>
+        )}
       </div>
     </header>
   );

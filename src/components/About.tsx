@@ -1,6 +1,25 @@
+import { GiArtificialIntelligence } from 'react-icons/gi';
+
 const About = () => {
   return (
     <div id="about">
+      <div className="flex justify-center flex-col items-center text-gray-400 bg-gray-900 gap-5">
+        <div className="rounded-full bg-gray-800 sm:w-32 sm:h-32 h-20 w-20 inline-flex justify-center  items-center text-indigo-400">
+          <GiArtificialIntelligence size={80} />
+        </div>
+        <div className="text-center mt-6 sm:mt-0 mx-64">
+          <h2 className="text-white text-lg title-font font-medium mb-2">
+            Tailored Just For You
+          </h2>
+          <p className="leading-relaxed text-base">
+            MockView presents a unique, AI-driven interview experience where
+            each session is crafted by advanced algorithms, ensuring that no two
+            interviews are ever the same. This personalized approach allows us
+            to adapt to your specific needs and skills, providing a fresh and
+            distinct challenge every time.
+          </p>
+        </div>
+      </div>
       <section className="text-gray-400 bg-gray-900 body-font w-screen">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
