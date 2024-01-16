@@ -1,9 +1,8 @@
-import Image from 'next/image';
 const Hero = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font w-screen pt-5 px-5">
-      <div className=" flex py-24 flex-col items-center justify-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <section className="text-gray-400 bg-gray-900 body-font w-screen pt-5 px-5 bg-[url('/bgtest.png')] bg-center">
+      <div className="flex pt-24 flex-col items-center justify-center">
+        <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 items-center text-center">
           <h1 className="title-font md:text-3xl text-2xl mb-4 font-medium text-white text-center self-center">
             Practice For Real
             <br />

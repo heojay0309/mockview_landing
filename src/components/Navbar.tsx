@@ -41,7 +41,7 @@ const Navbar = () => {
           <Image src="/M.png" alt="logo" width={50} height={50} />
           <span className=" text-xl">MockView</span>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center md:gap-6 lg:gap-10">
           <a className="mr-5 hover:text-white" href="#home">
             HOME
           </a>
