@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`${textClass} transition-color duration-300 body-font fixed w-screen ${bgClass}`}
+      className={`${textClass} transition-color duration-300 body-font fixed w-screen ${bgClass} z-20`}
     >
       <div className="md:flex flex-wrap hidden md:flex-row items-center">
         <a
@@ -53,7 +53,7 @@ const Navbar = () => {
           </a>
         </nav>
 
-        <button className="inline-flex items-center bg-indigo-600 border-0 px-7 py-5 focus:outline-none hover:bg-indigo-500 text-white rounded text-base mt-0">
+        <button className="inline-flex items-center bg-indigo-600 border-0 px-7 py-5 focus:outline-none hover:bg-indigo-500 text-white rounded-l text-base mt-0">
           GET STARTED
         </button>
       </div>

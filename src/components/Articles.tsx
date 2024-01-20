@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Articles = () => {
   return (
-    <div className="w-full flex flex-wrap px-12 items-center justify-between">
+    <div className="w-full flex flex-wrap px-12 items-center justify-between text-white">
       {blogs.map((blog, index) => {
         if (index === 0) {
           return (
@@ -13,7 +13,7 @@ const Articles = () => {
               key={index}
             >
               <Image
-                src={blog.image}
+                src={`/article/article_${index + 1}.jpeg`}
                 alt={blog.title}
                 width={2250}
                 height={1390}
@@ -21,14 +21,15 @@ const Articles = () => {
                 className="hover:rounded-xl"
               />
               <div className="absolute bottom-10">
-                <div className="text-[36px] font-extrabold px-6 pt-2 max-w-lg">
-                  {blog.title}
-                </div>
-                <div className="px-6 pb-2 italic font-normal">
-                  {blog.author}
-                </div>
+                <Link href={blog.url}>
+                  <div className="text-[36px] font-extrabold px-6 pt-2 max-w-lg">
+                    {blog.title}
+                  </div>
+                  <div className="px-6 pb-2 italic font-normal">
+                    {blog.author}
+                  </div>
+                </Link>
               </div>
-              <Link href={blog.url} />
             </div>
           );
         }
@@ -38,7 +39,7 @@ const Articles = () => {
             key={index}
           >
             <Image
-              src={blog.image}
+              src={`/article/article_${index + 1}.jpeg`}
               alt={blog.title}
               width={2250}
               height={1390}
@@ -46,12 +47,15 @@ const Articles = () => {
               className="hover:rounded-xl"
             />
             <div className="absolute">
-              <div className="text-lg font-extrabold px-2 pt-2">
-                {blog.title}
-              </div>
-              <div className="px-2 pb-2 italic font-normal">{blog.author}</div>
+              <Link href={blog.url}>
+                <div className="text-lg font-extrabold px-2 pt-2">
+                  {blog.title}
+                </div>
+                <div className="px-2 pb-2 italic font-normal">
+                  {blog.author}
+                </div>
+              </Link>
             </div>
-            <Link href={blog.url} />
           </div>
         );
       })}
