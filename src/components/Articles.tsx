@@ -20,9 +20,9 @@ const Articles = () => {
                 layout="responsive"
                 className="hover:rounded-xl"
               />
-              <div className="absolute bottom-10">
+              <div className="absolute md:bottom-10 bottom-5">
                 <Link href={blog.url}>
-                  <div className="text-[36px] font-extrabold px-6 pt-2 max-w-lg">
+                  <div className="md:text-lg text-sm font-extrabold px-6 pt-2 max-w-lg text-ellipsis">
                     {blog.title}
                   </div>
                   <div className="px-6 pb-2 italic font-normal">
@@ -35,7 +35,7 @@ const Articles = () => {
         }
         return (
           <div
-            className="w-full sm:w-[47%] flex flex-col relative hover:italic h-full gap-3 m-3"
+            className="w-full sm:w-[40%] md:w-[100%] lg:w-[47%]  flex flex-col relative hover:italic h-full gap-3 m-3"
             key={index}
           >
             <Image
@@ -48,7 +48,7 @@ const Articles = () => {
             />
             <div className="absolute">
               <Link href={blog.url}>
-                <div className="text-lg font-extrabold px-2 pt-2">
+                <div className="md:text-lg text-sm  font-extrabold px-2 pt-2">
                   {blog.title}
                 </div>
                 <div className="px-2 pb-2 italic font-normal">
