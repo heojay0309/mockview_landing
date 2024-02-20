@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  letter-spacing: -1%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +17,227 @@
   }
 }
 
+div {
+  letter-spacing: -1%; /* Sets default line-height */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  letter-spacing: -1%;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+@media (min-width: 640px) {
+  .scroller__inner {
+    padding-block: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .scroller[data-animated='true'] {
+    overflow: clip;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scroller[data-animated='true'] .scroller__inner {
+    flex-wrap: nowrap;
+    animation-timeline: view();
+    opacity: 1;
+    animation: scrolling linear 25s infinite backwards;
+    animation-range: cover 20px;
+  }
+
+  .scroller[data-animated='true'] .scroller__inner:hover {
+    animation-play-state: paused;
+  }
+
+  .scroller[data-direction='right'] .scroller__inner {
+    animation-direction: reverse;
+  }
+
+  @keyframes scrolling {
+    0% {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 0.8;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translateX(100%);
+    }
+  }
+}
+
+.features {
+  position: flex;
+  overflow: hidden;
+  /* width: max-content; */
+
+  animation: flyLeft linear both;
+  /* flex-wrap: nowrap; */
+  animation-timeline: view();
+  animation-range: entry 50px;
+}
+
+.features[data-direction='right'] {
+  position: flex;
+  overflow: hidden;
+
+  /* width: max-content; */
+  animation: flyRight linear both;
+  animation-timeline: view();
+  animation-range: entry 50px;
+}
+
+@keyframes flyLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes flyRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  width: 100%;
+  transform-origin: left;
+  scale: 0.1 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(block);
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+@media (min-width: 640px) {
+  .hero {
+    opacity: 0;
+    scale: 0;
+    height: 1500px;
+    animation: fade-in linear backwards;
+    animation-timeline: view();
+    animation-range-start: entry;
+    animation-range-end: exit;
+  }
+
+  @keyframes fade-in {
+    0% {
+      scale: 0;
+      opacity: 0;
+    }
+    50% {
+      scale: 0.5;
+      opacity: 1;
+    }
+    100% {
+      scale: 1;
+      opacity: 0;
+    }
+  }
+}
+/* @media (prefers-reduced-motion: no-preference) {
+  hero > h1 {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+  @keyframes fade-in {
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+} */
+
+@keyframes expandOutwards {
+  0% {
+    transform: scale(0.5); /* Start smaller */
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2); /* Finish larger */
+    opacity: 0;
+  }
+}
+
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: rgb(220, 221, 185);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  animation: expandOutwards linear infinite;
+}
+
+@media (min-width: 640px) {
+  /* sm */
+  .hero {
+    animation-range-end: contain;
+    height: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* md */
+  .hero {
+    animation-range-end: exit;
+  }
+  .scroller__inner {
+    animation-duration: 20s; /* Faster animation on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg */
+  .hero {
+    animation-range-end: exit;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl */
+  .hero {
+    animation-range-end: exit;
+
+    height: 1500px;
+  }
 }

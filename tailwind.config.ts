@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        DEFAULT: '1.5', // Sets the default line-height for the project
+        tighter: '1.2',
+      },
+      animation: {
+        'ping-slow': 'ping 9s',
+      },
+      letterSpacing: {
+        DEFAULT: '-0.01em',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -16,5 +26,5 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

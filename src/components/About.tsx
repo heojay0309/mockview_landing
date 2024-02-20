@@ -2,18 +2,18 @@ import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const About = () => {
   return (
-    <div id="about">
-      <section className="text-gray-400 bg-gray-900 body-font w-screen">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="text-center mt-6 mb-10 sm:mt-0 border-gray-800 border-b-2 lg:w-3/5 mx-auto px-5 py-12">
+    <div id="about" className="relative overflow-x-clip">
+      <section className="text-gray-400 bg-transparent body-font ">
+        <div className=" px-5 py-24  ">
+          <div className="text-center mt-6 mb-10 sm:mt-0 border-gray-800 border-b-2 features lg:w-3/5 mx-auto px-5 py-12">
             <div className="flex justify-center flex-col items-center text-gray-400 gap-5">
               <div className="rounded-full bg-gray-800 sm:w-32 sm:h-32 h-20 w-20 inline-flex justify-center items-center text-indigo-400">
                 <GiArtificialIntelligence size={80} />
               </div>
-              <h2 className="text-white text-lg title-font font-medium mb-2">
+              <h2 className="text-white text-lg title-font leading-snug font-medium mb-2">
                 Tailored Just For You
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base ">
                 MockView presents a unique, AI-driven interview experience where
                 each session is crafted by advanced algorithms, ensuring that no
                 two interviews are ever the same. This personalized approach
@@ -22,22 +22,26 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+
+          <div
+            data-direction="right"
+            className="flex items-center lg:w-3/5 mx-auto features border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col"
+          >
             <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
               <svg
                 viewBox="-1 -9 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M15,0 L7,0"></path>
                 <path d="M15,5 L7,5"></path>
               </svg>
             </div>
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-white text-lg title-font font-medium mb-2">
+            <div className="flex-grow sm:text-left  text-center mt-6 sm:mt-0">
+              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
                 Be Calm, Solve Algos
               </h2>
               <p className="leading-relaxed text-base">
@@ -55,9 +59,9 @@ const About = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
@@ -66,9 +70,10 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+
+          <div className="flex items-center lg:w-3/5 mx-auto features border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-white text-lg title-font font-medium mb-2">
+              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
                 Technical Speaking
               </h2>
               <p className="leading-relaxed text-base">
@@ -84,9 +89,9 @@ const About = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
@@ -94,13 +99,13 @@ const About = () => {
                 </svg>
               </a>
             </div>
-            <div className="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+            <div className=" sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="sm:w-16 sm:h-16 w-10 h-10"
                 viewBox="0 0 24 24"
               >
@@ -108,14 +113,17 @@ const About = () => {
               </svg>
             </div>
           </div>
-          <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+          <div
+            data-direction="right"
+            className="features flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
+          >
             <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
                 viewBox="0 0 100 100"
                 className="sm:w-24 sm:h-24 w-16 h-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,8 +152,9 @@ const About = () => {
                 ></path>
               </svg>
             </div>
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-white text-lg title-font font-medium mb-2">
+
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ">
+              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
                 Post-Interview Feedback
               </h2>
               <p className="leading-relaxed text-base">
@@ -160,9 +169,9 @@ const About = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
@@ -171,9 +180,9 @@ const About = () => {
               </a>
             </div>
           </div>
-          <button className="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          {/* <button className="flex mt-10 items-center mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Try Now!
-          </button>
+          </button> */}
         </div>
       </section>
     </div>

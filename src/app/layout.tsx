@@ -4,6 +4,7 @@ import './globals.css';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Background from '@/constants/Background';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={(inter.className, 'h-full w-full bg-black')}>
+        <div className="scroll-watcher"></div>
+        <Background />
         <Navbar />
         {children}
         <Footer />
