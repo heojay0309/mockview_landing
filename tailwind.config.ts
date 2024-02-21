@@ -14,6 +14,21 @@ const config: Config = {
       },
       animation: {
         'ping-slow': 'ping 9s',
+        'bounce-slow': 'bounce 4s infinite ',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-10%)',
+            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+          // '0%, 100%': { transform: 'rotate(-3deg)' },
+          // '50%': { transform: 'rotate(3deg)' },
+        },
       },
       letterSpacing: {
         DEFAULT: '-0.01em',

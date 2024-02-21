@@ -1,7 +1,7 @@
 import Star from '../components/Star';
 
 const Background = () => {
-  const numberOfStars = 500; // Adjust based on desired density
+  const numberOfStars = 50; // Adjust based on desired density
 
   const generateStars = (): JSX.Element[] => {
     let stars = [];
@@ -10,8 +10,8 @@ const Background = () => {
       // Randomize start positions and movement directions
       const startX = 50; // Start from the center
       const startY = 50;
-      const endX = Math.random() * 100; // End anywhere on the screen
-      const endY = Math.random() * 100;
+      const endX = Math.random() * 90; // End anywhere on the screen
+      const endY = Math.random() * 90;
 
       const style: React.CSSProperties = {
         left: `${Math.random() * 100}%`,
@@ -30,7 +30,7 @@ const Background = () => {
   };
 
   return (
-    <div className="bg-black fixed top-0 left-0 w-full h-full overflow-hidden">
+    <div className="h-full w-full bg-black fixed inset-0 z-0 object-cover bg-blend-overlay">
       {generateStars()}
     </div>
   );

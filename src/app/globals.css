@@ -31,51 +31,117 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* styles.css */
+.layout-container {
+  position: relative;
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 64px; /* Adjust based on nav bar height */
+  padding-bottom: 74px; /* Adjust based on footer height */
+}
+
+.background-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1; /* Ensures the background is behind the content */
+}
+
+.content-component {
+  position: relative; /* Ensures content is placed above the background */
+  z-index: 1; /* Optional: Explicitly setting a higher z-index for clarity */
+  display: flex;
+  flex-direction: column;
+  /* Additional styling for your content */
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  z-index: 10; /* Ensure it's above other content */
+  /* Additional styling for nav bar */
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust as needed */
+  z-index: 10; /* Ensure it's above other content */
+  /* Additional styling for footer */
+}
+
 @media (min-width: 640px) {
   .scroller__inner {
     padding-block: 0rem;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
+    overflow-x: hidden;
   }
 
   .scroller[data-animated='true'] {
-    overflow: clip;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    /* display: flex; */
+    position: relative;
+    /* justify-content: space-between; */
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white);
   }
 
-  .scroller[data-animated='true'] .scroller__inner {
+  /* .scroller[data-animated='true'] .scroller__inner {
     flex-wrap: nowrap;
     animation-timeline: view();
     opacity: 1;
-    animation: scrolling linear 25s infinite backwards;
-    animation-range: cover 20px;
+    animation: scrolling 15s linear infinite both;
+  } */
+  .scroller[data-animated='true'] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    display: flex;
+    scale: 0.5;
+    /* position: absolute; */
+    animation-timeline: view();
+    animation: scrolling linear both;
+    animation-range-start: entry;
+    animation-range-end: exit;
   }
 
-  .scroller[data-animated='true'] .scroller__inner:hover {
+  /* .scroller[data-animated='true'] .scroller__inner:hover {
     animation-play-state: paused;
-  }
+  } */
 
-  .scroller[data-direction='right'] .scroller__inner {
+  /* .scroller[data-direction='right'] .scroller__inner {
     animation-direction: reverse;
-  }
+  } */
 
   @keyframes scrolling {
     0% {
-      opacity: 1;
+      opacity: 0;
       transform: translateX(-100%);
     }
-    50% {
-      opacity: 0.8;
+    100% {
+      opacity: 1;
       transform: translateX(0%);
     }
-    100% {
-      opacity: 0.5;
-      transform: translateX(100%);
-    }
+
+    /* 100% {
+      opacity: 1;
+      scale: 1;
+      transform: translateX(0%);
+    } */
   }
 }
 

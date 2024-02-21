@@ -5,6 +5,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Background from '@/constants/Background';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,12 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(inter.className, 'h-full w-full bg-black')}>
-        <div className="scroll-watcher"></div>
+      <body className={inter.className}>
+        {/* <div className="scroll-watcher"></div> */}
         <Background />
-        <Navbar />
-        {children}
-        <Footer />
+
+        <div className="relative z-10 w-full justify-between flex flex-col h-screen">
+          <div className="">
+            <Navbar />
+          </div>
+          <div className="flex-1">{children}</div>
+          <div className="">
+            <Footer />
+          </div>
+          <Toaster />
+        </div>
       </body>
     </html>
   );

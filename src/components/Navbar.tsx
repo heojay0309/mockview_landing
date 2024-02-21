@@ -30,13 +30,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header
-      className={`${textClass} transition-color duration-500 body-font fixed w-screen ${bgClass} z-20`}
+    <nav
+      className={`${textClass} transition-color duration-500 body-font w-full fixed  ${bgClass}`}
     >
       {/* <header
       className={` transition-color rounded-sm  shadow-md shadow-white  drop-shadow text-white duration-300 body-font fixed w-screen z-20`}
     > */}
-      <div className="md:flex flex-wrap hidden md:flex-row items-center">
+      <div className="md:flex flex-wrap hidden md:flex-row items-center ">
         <a
           href="#home"
           className="flex title-font  font-medium items-center mb-4 md:mb-0"
@@ -98,7 +98,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </header>
+    </nav>
   );
 };
 
