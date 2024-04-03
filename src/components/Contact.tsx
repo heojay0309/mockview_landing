@@ -8,13 +8,16 @@ const Contact = () => {
     const formData = new FormData(event.target);
 
     try {
-      const response = await fetch('https://formspree.io/f/xjvngdwp', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          Accept: 'application/json',
-        },
-      });
+      const response = await fetch(
+        `https://formspree.io/f/${process.env.FORMSPREE_URL}`,
+        {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        }
+      );
 
       // Handle the response from Formspree
       if (response.ok) {
