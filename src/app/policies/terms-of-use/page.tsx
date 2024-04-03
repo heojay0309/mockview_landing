@@ -1,6 +1,6 @@
 const TermsOfUse = () => {
   return (
-    <div className="flex gap-[16px] tracking-widest flex-col justify-start pt-[124px] p-[64px] h-full overflow-y-scroll">
+    <div className="flex gap-[16px] text-white tracking-widest flex-col justify-start pt-[124px] p-[64px] h-full overflow-y-scroll">
       <h1 className="text-[64px] font-[400] leading-[16px]">
         Terms of Service
       </h1>
