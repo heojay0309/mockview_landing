@@ -18,11 +18,11 @@ const Footer = () => {
             </h1>
           </div>
           <div className="flex md:gap-[32px] gap-[8px] opacity-60  text-[12px] md:text-[16px] md:pl-[32px]  ">
-            <Link href="https://mockview.xyz/policies/terms-of-use">
+            <Link href="https://www.mockview.xyz/policies/terms-of-use">
               Terms of Use
             </Link>
             <div className="border-r my-1 md:hidden"></div>
-            <Link href="https://mockview.xyz/policies/privacy-policy">
+            <Link href="https://www.mockview.xyz/policies/privacy-policy">
               Privacy Policy
             </Link>
           </div>

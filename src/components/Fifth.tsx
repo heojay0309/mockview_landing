@@ -68,13 +68,6 @@ const Fifth = () => {
             ))}
         </div>
       </section>
-      {/* {(select === 'Contact Us' && <Contact />) ||
-            (select === 'Frequently Asked Questions' && (
-              <Faq
-                setContactToggle={setContactToggle}
-                setFaqToggle={setFaqToggle}
-              />
-            ))} */}
       <section className="flex md:flex-1  md:p-[128px] items-center justify-center md:h-full ">
         <div className="flex md:flex-col md:items-center justify-center gap-[32px] ">
           <Link
