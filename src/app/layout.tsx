@@ -21,18 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} `}>
         {/* <div className="scroll-watcher"></div> */}
-        <Background />
+        {/* <Background /> */}
 
-        <div className="relative z-10 w-full justify-between flex flex-col h-screen">
-          <div className="">
-            <Navbar />
-          </div>
+        <div className="relative z-10 w-full justify-between flex  flex-col bg-gradient-to-b from-[#010E21] via-slate-700 to-[#010E21]">
+          <Navbar />
           <div className="flex-1">{children}</div>
-          <div className="">
-            <Footer />
-          </div>
+          <Footer />
           <Toaster />
         </div>
       </body>

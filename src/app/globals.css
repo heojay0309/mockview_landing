@@ -17,20 +17,19 @@
   }
 }
 
+/* 
 div {
   letter-spacing: -1%; /* Sets default line-height */
-}
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   letter-spacing: -1%;
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+      background-color,
+      rgb(var(--background-start-rgb))
     )
-    rgb(var(--background-start-rgb));
-}
+    rgb(var(--background-end-rgb)); */
 
 /* styles.css */
 .layout-container {
@@ -306,4 +305,57 @@ body {
 
     height: 1500px;
   }
+}
+/* Initial state of the section */
+.section-enter {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+/* Final state of the section */
+.section-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+Initial state of the title .title-enter {
+  transform: translateY(-0%);
+}
+
+/* Final state of the title */
+.title-enter-active {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+/* Initial state of the component (Faq or Contact) */
+.component-enter {
+  transform: translateY(100%);
+}
+
+/* Final state of the component (Faq or Contact) */
+.component-enter-active {
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
+.title-fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.title-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.title-fade-exit {
+  opacity: 1;
+}
+
+.title-fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
 }
