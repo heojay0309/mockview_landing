@@ -12,7 +12,7 @@ const PolicyPage = () => {
       'Practices with respect to personal information we collect from or about you',
   };
   return (
-    <div className="flex gap-[16px] text-white flex-col justify-start pt-[124px] p-[64px] h-full overflow-y-scroll">
+    <div className="flex flex-col px-[32px] md:h-[804px] md:min-h-[804px] min-h-[740px] h-[740px] md:gap-[32px] gap-[32px] text-white md:pb-[128px]  py-[64px]">
       <h1 className="text-[64px] font-[400] leading-[16px]">
         Terms & policies
       </h1>

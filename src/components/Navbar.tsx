@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="px-[32px] py-[8px] hidden md:flex md:invisible rounded-[4px]">
           <span>Enter App</span>
         </div>
-        <Link href="#home" className="flex gap-[4px]">
+        <Link href="/" className="flex gap-[4px]">
           <Image src="/mockviewLogo.svg" alt="logo" width={32} height={32} />
           <span className=" text-[20px] leading-[24px] self-center font-[600] text-white">
             MockView

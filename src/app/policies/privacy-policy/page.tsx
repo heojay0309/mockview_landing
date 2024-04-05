@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <div className="flex gap-[16px] text-white flex-col tracking-wider justify-start pt-[124px] p-[64px] h-full overflow-y-scroll">
       <h1 className="text-[64px] font-[400] leading-[16px]">Privacy Policy</h1>
       <div className="border-b pt-1"></div>
-      <div className="flex flex-col gap-[4px] ">
+      <div className="flex flex-col gap-[4px]">
         <h1 className="font-[500]">Last updated</h1>
         <span className="font-[200]">03/25/2024</span>
       </div>
