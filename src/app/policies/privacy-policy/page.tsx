@@ -2,8 +2,10 @@ import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex gap-[16px] text-white flex-col tracking-wider justify-start pt-[124px] p-[64px] h-full overflow-y-scroll">
-      <h1 className="text-[64px] font-[400] leading-[16px]">Privacy Policy</h1>
+    <div className="flex gap-[16px] leading-[30px] text-white tracking-widest flex-col justify-start pt-[64px] md:pt-[124px] p-[32px] md:p-[64px] h-full overflow-y-scroll">
+      <h1 className="text-[32px] md:text-[64px] font-[500] leading-[16px]">
+        Privacy Policy
+      </h1>
       <div className="border-b pt-1"></div>
       <div className="flex flex-col gap-[4px]">
         <h1 className="font-[500]">Last updated</h1>
@@ -36,7 +38,9 @@ const PrivacyPolicy = () => {
         </div>
       </section>
       <section className="flex flex-col gap-[16px]">
-        <h2 className="text-[24px] font-[600]">Information Collection</h2>
+        <h2 className="text-[24px] md:text-[32px] font-[500]">
+          Information Collection
+        </h2>
         <span>
           This summary provides key points from our privacy notice, but you can
           find out more details about any of these topics by clicking the link
@@ -123,7 +127,9 @@ const PrivacyPolicy = () => {
         </div>
       </section>
       <section id="toc" className="flex flex-col gap-[16px]">
-        <h1 className="text-[24px] font-[600]">TABLE OF CONTENTS</h1>
+        <h1 className="text-[24px] md:text-[32px] font-[500]">
+          TABLE OF CONTENTS
+        </h1>
         <ul>
           <a className="text-blue-500 underline" href="#1">
             1. WHAT INFORMATION DO WE COLLECT?
@@ -147,16 +153,16 @@ const PrivacyPolicy = () => {
         </ul>
       </section>
       <section id="1" className="flex flex-col gap-[16px]">
-        <h1 className="text-[24px] font-[600]">
+        <h1 className="text-[24px] md:text-[32px] font-[500]">
           WHAT INFORMATION DO WE COLLECT?
         </h1>
         <h1 className="text-[18px] font-[600]">
           Personal information you disclose to us
         </h1>
-        <div className="flex flex-row gap-[4px] italic text-[14px]">
+        <div className=" italic text-[14px]">
           {' '}
           <span className="font-bold">In Short: </span>
-          <span>We collect personal information that you provide to us.</span>
+          <span> We collect personal information that you provide to us.</span>
         </div>
 
         <div className="flex flex-row gap-[4px] flex-wrap">
@@ -189,7 +195,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section id="2" className="flex flex-col gap-[16px]">
-        <h1 className="text-[24px] font-[600]">
+        <h1 className="text-[24px] md:text-[32px] font-[500]">
           WHAT INFORMATION DO WE COLLECT?
         </h1>
         <h1 className="text-[18px] font-[600]">
@@ -261,7 +267,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
       <section id="3" className="flex flex-col gap-[16px]">
-        <h1 className="text-[24px] font-[600]">
+        <h1 className="text-[24px] md:text-[32px] font-[500]">
           HOW DO WE HANDLE YOUR SOCIAL LOGINS?
         </h1>
         <div className="flex flex-row gap-[4px] italic text-[14px]">
@@ -299,7 +305,8 @@ const PrivacyPolicy = () => {
         </div>
       </section>
       <section id="4" className="flex flex-col gap-[16px]">
-        <h1 className="text-[24px] font-[600]">
+        <h1 className="text-[24px] md:text-[32px] font-[500]">
+          {' '}
           HOW LONG DO WE KEEP YOUR INFORMATION?
         </h1>
         <div className="flex flex-row gap-[4px] italic text-[14px]">
@@ -330,12 +337,14 @@ const PrivacyPolicy = () => {
           further processing until deletion is possible.
         </div>
       </section>
-      <h2 className="text-[32px]">Changes to This Privacy Policy</h2>
+      <h2 className="text-[24px] md:text-[32px] font-[500]">
+        Changes to This Privacy Policy
+      </h2>
       <span>
         We may update our Privacy Policy from time to time. We will notify you
         of any changes by posting the new policy on this page.
       </span>
-      <h2 className="text-[32px]">Contact Us</h2>
+      <h2 className="text-[24px] md:text-[32px] font-[500]">Contact Us</h2>
       <span>
         If you have any questions about this Privacy Policy, please contact us
         at contact@mockview.xyz
