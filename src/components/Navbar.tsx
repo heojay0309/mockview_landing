@@ -15,10 +15,10 @@ const Navbar = () => {
           <span>Enter App</span>
         </div>
         <Link href="/" className="flex gap-[4px]">
-          <h1 className="text-[#3e66de] text-[32px] leading-[24px] font-[600]">
+          <h1 className="text-[#3e66de] text-[28px] leading-[24px] font-[600]">
             Prep
           </h1>
-          <span className=" text-[32px] leading-[24px] self-center font-[600] text-white">
+          <span className=" text-[32px] leading-[28px] self-center font-[600] text-white">
             AI
           </span>
         </Link>

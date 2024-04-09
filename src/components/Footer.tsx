@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="text-white font-[600] leading-[24px] flex flex-row justify-between items-center ">
         <div className="flex md:gap-[32px] md:flex-row flex-col items-center md:divide-x-[1px]  justify-center">
           <div className="flex flex-row md:items-center self-start gap-1 ">
-            <h1 className="text-[#3e66de] text-[32px] leading-[24px] font-[600]">
+            <h1 className="text-[#3e66de] text-[28px] leading-[24px] font-[600]">
               Prep
             </h1>
-            <span className=" text-[32px] leading-[24px] self-center font-[600] text-white">
+            <span className=" text-[32px] leading-[28px] self-center font-[600] text-white">
               AI
             </span>
           </div>
@@ -24,8 +24,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="opacity-60 self-end md:text-[16px] text-[12px]">
-          © 2024 Prep <span className="md:text-[16px] text-[12px]">AI</span>
+        <div className="opacity-60 self-end flex gap-[4px]">
+          © 2024 Prep<span className="">AI</span>
         </div>
       </div>
     </nav>
