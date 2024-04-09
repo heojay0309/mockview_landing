@@ -1,16 +1,16 @@
 const TermsOfUse = () => {
   return (
-    <div className="flex gap-[16px] leading-[30px] text-white tracking-widest flex-col justify-start pt-[62px] md:pt-[124px] p-[32px] md:p-[64px] h-full overflow-y-scroll">
+    <div className="flex flex-col gap-[32px] leading-[30px] text-white tracking-widest py-[64px] px-[64px] h-full overflow-y-scroll">
       <h1 className="text-[32px] md:text-[64px] font-[500] leading-[16px]">
         Terms of Service
       </h1>
       <div className="border-b pt-1"></div>
       <div className="flex flex-col gap-[4px] ">
         <h1 className="font-[500]">Last updated</h1>
-        <span className="font-[200]">03/25/2024</span>
+        <span className="font-[200]">04/09/2024</span>
       </div>
       <section className="flex flex-col gap-[16px]">
-        <span className="text-[16px] md:text-[18px]">Welcome to MockView!</span>
+        <span className="text-[16px] md:text-[18px]">Welcome to PrepAI!</span>
         <span className="text-[14px] md:text-base">
           By accessing or using our application, you agree to be bound by these
           terms of service.
@@ -74,7 +74,7 @@ const TermsOfUse = () => {
       <h2 className="text-[24px] md:text-[32px] font-[500]">Contact Us</h2>
       <span>
         If you have any questions about these Terms, please contact us at
-        contact@mockview.xyz
+        contact@prepai.dev
       </span>
     </div>
   );

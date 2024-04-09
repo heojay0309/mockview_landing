@@ -10,8 +10,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MockView',
-  description: 'Have mock interviews with real scenarios',
+  title: 'PrepAI',
+  description: 'Interview Prep, Redefined',
 };
 
 export default function RootLayout({

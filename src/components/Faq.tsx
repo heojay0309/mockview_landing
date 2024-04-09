@@ -9,14 +9,14 @@ const Faq = ({
 }) => {
   const questions = [
     {
-      question: 'What is MockView?',
+      question: 'What is PrepAI?',
       answer:
-        'MockView is an innovative platform offering software engineers a chance to practice technical interviews in real-time. Our AI-powered interviewers simulate the experience of a real technical interview, providing users with a unique opportunity to prepare for and excel in their job interviews.',
+        'PrepAI is an innovative platform offering software engineers a chance to practice technical interviews in real-time. Our AI-powered interviewers simulate the experience of a real technical interview, providing users with a unique opportunity to prepare for and excel in their job interviews.',
     },
     {
-      question: 'How does MockView simulate real interviews?',
+      question: 'How does PrepAI simulate real interviews?',
       answer:
-        'MockView uses advanced AI technology to create interview scenarios that mirror the questions, pacing, and interactive experience of a live technical interview. Our AI interviewers adapt to your responses, ensuring a dynamic and realistic interview practice session.',
+        'PrepAI uses advanced AI technology to create interview scenarios that mirror the questions, pacing, and interactive experience of a live technical interview. Our AI interviewers adapt to your responses, ensuring a dynamic and realistic interview practice session.',
     },
     {
       question: 'What kind of technical questions can I expect?',
@@ -24,12 +24,12 @@ const Faq = ({
     },
     {
       question:
-        'Do I need any specific software or hardware to use MockView like how Zoom does?',
+        'Do I need any specific software or hardware to use PrepAI like how Zoom does?',
       answer: `Nope, all you'll need is a stable internet connection and a webcam-enabled device. Our platform is web-based, so no additional software installation is required. We recommend you to use the Chrome browser for your optimal experience.`,
     },
     {
       question: 'How is the live coding challenge conducted?',
-      answer: `Live coding challenges on MockView take place within an embedded IDE on our platform. You will write and execute code while explaining your approach to the AI interviewer, just as you would in a real interview setting.`,
+      answer: `Live coding challenges on PrepAI take place within an embedded IDE on our platform. You will write and execute code while explaining your approach to the AI interviewer, just as you would in a real interview setting.`,
     },
     {
       question: 'How does the AI provide feedback on my performance?',
@@ -39,7 +39,7 @@ const Faq = ({
     {
       question: 'Can I choose the difficulty level of my mock interview?',
       answer:
-        'Currently, in our beta version, we are not offering the feature. However, in the future, MockView will allow you to set the difficulty level of your mock interview to match your current skill set or the job role you are aiming for, ensuring that the practice you get is tailored to your needs.',
+        'Currently, in our beta version, we are not offering the feature. However, in the future, PrepAI will allow you to set the difficulty level of your mock interview to match your current skill set or the job role you are aiming for, ensuring that the practice you get is tailored to your needs.',
     },
     {
       question: 'What if I face technical issues during the mock interview?',
@@ -49,18 +49,18 @@ const Faq = ({
     {
       question: 'Is there a way to review past interviews?',
       answer:
-        'Yes, MockView stores the recordings of your past interviews, and you can access them anytime. Reviewing past performances can be an effective way to track your progress and refine your interviewing skills.',
+        'Yes, PrepAI stores the recordings of your past interviews, and you can access them anytime. Reviewing past performances can be an effective way to track your progress and refine your interviewing skills.',
     },
     {
-      question: 'How often can I take mock interviews with MockView?',
+      question: 'How often can I take mock interviews with PrepAI?',
       answer:
         'Depending on your subscription plan, you can take a certain number of mock interviews per month. We offer several plans to accommodate different preparation needs and frequencies.',
     },
     {
       question:
-        'Does MockView offer preparation for non-technical interview questions?',
+        'Does PrepAI offer preparation for non-technical interview questions?',
       answer:
-        'Currently, MockView specializes in technical interviews only. However, we are considering expanding our services to include non-technical interview preparation in the future.',
+        'Currently, PrepAI specializes in technical interviews only. However, we are considering expanding our services to include non-technical interview preparation in the future.',
     },
     {
       question: 'What payment methods do you accept?',
@@ -69,17 +69,17 @@ const Faq = ({
     },
     {
       question: 'Is there a trial period for new users?',
-      answer: `Yes, we offer a 7-day free trial that gives you full access to MockView’s features. This allows you to experience the platform and see how it can benefit your interview preparation before committing to a subscription.`,
+      answer: `Yes, we offer a 7-day free trial that gives you full access to PrepAI's features. This allows you to experience the platform and see how it can benefit your interview preparation before committing to a subscription.`,
     },
     {
-      question: 'How can MockView help me if I am new to technical interviews?',
+      question: 'How can PrepAI help me if I am new to technical interviews?',
       answer:
-        'MockView is perfect for beginners. Our platform will introduce you to the format of technical interviews and the types of questions asked, with various difficulty levels to ease you into the process.',
+        'PrepAI is perfect for beginners. Our platform will introduce you to the format of technical interviews and the types of questions asked, with various difficulty levels to ease you into the process.',
     },
     {
       question: `Can I get a refund if I'm not satisfied with the service?`,
       answer:
-        'We aim for your complete satisfaction with MockView. If for any reason you are not satisfied, we offer a refund within the first 14 days of your subscription, no questions asked.',
+        'We aim for your complete satisfaction with PrepAI. If for any reason you are not satisfied, we offer a refund within the first 14 days of your subscription, no questions asked.',
     },
   ];
   return (

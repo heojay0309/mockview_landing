@@ -14,7 +14,7 @@ const About = () => {
                 Tailored Just For You
               </h2>
               <p className="leading-relaxed text-base ">
-                MockView presents a unique, AI-driven interview experience where
+                PrepAI presents a unique, AI-driven interview experience where
                 each session is crafted by advanced algorithms, ensuring that no
                 two interviews are ever the same. This personalized approach
                 allows us to adapt to your specific needs and skills, providing

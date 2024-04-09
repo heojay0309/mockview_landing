@@ -13,8 +13,8 @@ const Third = () => {
         <div className="flex flex-col md:w-5/6 justify-start gap-[32px]">
           <div className="flex md:items-center w-full gap-[32px]">
             <div className="flex flex-col self-center  ">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
-                <span className="text-green-500 font-[600] md:text-[18px] text-sm leading-[28px] text-center">
+              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
+                <span className="text-green-500 font-[600] md:text-[32px] text-sm leading-[28px] text-center">
                   {'?'}
                 </span>
               </div>
@@ -34,9 +34,9 @@ const Third = () => {
 
           <div className="flex h-full md:items-center gap-[32px]">
             <div className="flex flex-col self-center">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
+              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
                 {' '}
-                <span className="text-green-500 font-[600] md:text-[18px] text-sm leading-[28px] text-center">
+                <span className="text-green-500 font-[600] md:text-[32px] text-sm leading-[28px] text-center">
                   {' >_'}
                 </span>
               </div>
@@ -55,9 +55,9 @@ const Third = () => {
           </div>
           <div className="flex h-full md:items-center gap-[32px] ">
             <div className="flex flex-col self-center ">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
+              <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
                 {' '}
-                <span className="text-green-500 font-[600] md:text-[18px] text-sm leading-[28px] text-center">
+                <span className="text-green-500 font-[600] md:text-[32px] text-sm leading-[28px] text-center">
                   {'</>'}
                 </span>
               </div>

@@ -15,13 +15,15 @@ const Navbar = () => {
           <span>Enter App</span>
         </div>
         <Link href="/" className="flex gap-[4px]">
-          <Image src="/mockviewLogo.svg" alt="logo" width={32} height={32} />
-          <span className=" text-[20px] leading-[24px] self-center font-[600] text-white">
-            MockView
+          <h1 className="text-[#3e66de] text-[32px] leading-[24px] font-[600]">
+            Prep
+          </h1>
+          <span className=" text-[32px] leading-[24px] self-center font-[600] text-white">
+            AI
           </span>
         </Link>
         <Link
-          href="https://www.beta.mockview.xyz"
+          href="https://www.beta.prepai.dev"
           className=" bg-[#2F67E6] border border-[#5D8EFE] md:px-[32px] md:py-[8px] px-[16px] py-[4px] hover:bg-opacity-90 text-white rounded-[4px]"
         >
           <span className="text-[16px] leading-[24px] font-[600]">

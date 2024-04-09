@@ -70,14 +70,6 @@ const Fifth = () => {
       </section>
       <section className="flex md:flex-1  md:p-[128px] items-center justify-center md:h-full ">
         <div className="flex md:flex-col md:items-center justify-center gap-[32px] ">
-          <Link
-            href="https://www.beta.mockview.xyz"
-            className="md:h-[128px] md:flex hidden md:w-[128px] h-[96px] w-[96px] rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90 border border-[#5D8EFE]  items-center justify-center flex-col"
-          >
-            <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
-              Enter App
-            </span>
-          </Link>
           <button
             onClick={() => {
               setIsTransitioning(true);
@@ -94,6 +86,14 @@ const Fifth = () => {
               FAQ
             </span>
           </button>
+          <Link
+            href="https://www.prepai.dev/policies"
+            className="md:h-[128px] md:flex hidden md:w-[128px] h-[96px] w-[96px] rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90 border border-[#5D8EFE]  items-center justify-center flex-col"
+          >
+            <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
+              POLICIES
+            </span>
+          </Link>
           <button
             onClick={() => {
               setIsTransitioning(true);
@@ -107,7 +107,7 @@ const Fifth = () => {
             }`}
           >
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
-              Contact Us
+              CONTACT <br /> US
             </span>
           </button>
         </div>

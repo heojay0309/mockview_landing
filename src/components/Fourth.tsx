@@ -21,7 +21,7 @@ const Fourth = () => {
       </section>
       <section className="flex md:flex-1 md:pr-[64px] items-center justify-center md:h-full ">
         <div className="flex md:flex-col w-full  md:items-center justify-between gap-[32px] ">
-          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
+          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
               Performance
             </span>
@@ -29,7 +29,7 @@ const Fourth = () => {
               Metrics
             </span>
           </div>
-          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
+          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
               Strategy
             </span>
@@ -37,7 +37,7 @@ const Fourth = () => {
               Tips
             </span>
           </div>
-          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-slate-800 w-[96px] opacity-90 rounded-full bg-[#686868] flex items-center justify-center flex-col">
+          <div className="md:h-[128px] md:w-[128px] h-[96px] border border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90  flex items-center justify-center flex-col">
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
               Progress
             </span>
