@@ -13,8 +13,9 @@ const config: Config = {
         tighter: '1.2',
       },
       animation: {
-        'ping-slow': 'ping 9s',
+        'ping-slow': 'ping 2s infinite',
         'bounce-slow': 'bounce 4s infinite ',
+        blink: 'blink 3s infinite',
       },
       keyframes: {
         bounce: {
@@ -26,8 +27,10 @@ const config: Config = {
             transform: 'translateY(0)',
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
           },
-          // '0%, 100%': { transform: 'rotate(-3deg)' },
-          // '50%': { transform: 'rotate(3deg)' },
+        },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
         },
       },
       letterSpacing: {

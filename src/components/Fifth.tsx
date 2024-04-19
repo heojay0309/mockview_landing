@@ -24,26 +24,41 @@ const Fifth = () => {
   }, [faqToggle, contactToggle]);
 
   return (
-    <div className="w-full flex text-white justify-center md:flex-row-reverse flex-col md:h-[804px] md:min-h-[804px] min-h-[740px] h-[740px] md:gap-[32px] gap-[32px]">
+    <div className="w-full md:px-[64px] flex text-white justify-around md:flex-row-reverse flex-col md:h-[804px] md:min-h-[804px] min-h-[740px] h-[740px] my-[64px] md:my-[0px] md:gap-[32px] gap-[16px]">
       <section
-        className={`md:w-full flex items-center justify-center md:px-[64px] ${
+        className={`md:w-full flex items-center justify-center md:px-[160px]  ${
           select ? 'section-enter-active' : 'section-enter'
         }`}
       >
         <div
           className={`flex flex-col gap-[16px] component-enter-active ${
-            select === base ? '' : 'md:h-[540px]'
-          } justify-center md:items-center transition-all `}
+            select === base
+              ? 'md:animate-bounce'
+              : 'md:h-[540px] items-center self-center h-full w-full '
+          } justify-between md:items-start transition-all `}
         >
-          <h1
-            className={`font-[600] md:text-[48px] lg:w-2/3 md:text-start text-center text-[36px] md:leading-[64px] leading-[54px] md:leading-tighter-[4%] leading-tighter-[2%] ${
-              isTransitioning
-                ? 'title-fade-exit-active'
-                : 'title-fade-enter-active'
-            }`}
-          >
-            {select}
-          </h1>
+          {select === base ? (
+            <Link
+              href="https://www.beta.prepai.dev/"
+              className={`font-[600] md:text-[48px] w-full text-center md:text-start text-[36px] md:leading-[64px] leading-[54px] md:leading-tighter-[4%] leading-tighter-[2%] ${
+                isTransitioning
+                  ? 'title-fade-exit-active'
+                  : 'title-fade-enter-active'
+              }`}
+            >
+              {select}
+            </Link>
+          ) : (
+            <h1
+              className={`font-[600] md:text-[48px] w-full text-center md:text-start text-[36px] md:leading-[64px] leading-[54px] md:leading-tighter-[4%] leading-tighter-[2%] ${
+                isTransitioning
+                  ? 'title-fade-exit-active'
+                  : 'title-fade-enter-active'
+              }`}
+            >
+              {select}
+            </h1>
+          )}
           {(select === 'Contact Us' && (
             <div
               className={`flex-grow flex justify-center items-center ${
@@ -68,8 +83,8 @@ const Fifth = () => {
             ))}
         </div>
       </section>
-      <section className="flex md:flex-1  md:p-[128px] items-center justify-center md:h-full ">
-        <div className="flex md:flex-col md:items-center justify-center gap-[32px] ">
+      <section className="flex md:flex-1 items-center justify-center md:h-full ">
+        <div className="flex md:flex-col md:items-center justify-center md:gap-[32px] gap-[64px] ">
           <button
             onClick={() => {
               setIsTransitioning(true);
@@ -78,8 +93,8 @@ const Fifth = () => {
                 setFaqToggle(!faqToggle);
               }, 300);
             }}
-            className={`md:h-[128px] md:w-[128px] h-[96px] w-[96px] rounded-full bg-[#2F67E6] bg-opacity-20  hover:bg-opacity-90 border border-[#5D8EFE] flex items-center justify-center flex-col ${
-              faqToggle && 'bg-blue-500 bg-opacity-70'
+            className={`md:h-[128px] md:w-[128px] hover:border hover:border-[#5D8EFE] h-[92px] w-[92px] rounded-full bg-[#2F67E6] bg-opacity-20  hover:bg-opacity-60 flex items-center justify-center flex-col ${
+              faqToggle && 'bg-opacity-60 border border-[#5D8EFE]'
             }`}
           >
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
@@ -87,8 +102,8 @@ const Fifth = () => {
             </span>
           </button>
           <Link
-            href="https://www.prepai.dev/policies"
-            className="md:h-[128px] md:flex hidden md:w-[128px] h-[96px] w-[96px] rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-90 border border-[#5D8EFE]  items-center justify-center flex-col"
+            href="/policies"
+            className="md:h-[128px] md:flex hidden md:w-[128px] hover:border hover:border-[#5D8EFE] h-[92px] w-[92px] rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-60  items-center justify-center flex-col"
           >
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
               POLICIES
@@ -102,12 +117,12 @@ const Fifth = () => {
                 setContactToggle(!contactToggle);
               }, 300);
             }}
-            className={`md:h-[128px] md:w-[128px] h-[96px] w-[96px] rounded-full bg-[#2F67E6] bg-opacity-20  hover:bg-opacity-90 border border-[#5D8EFE] flex items-center justify-center flex-col ${
-              contactToggle && 'bg-blue-500 bg-opacity-70'
+            className={`md:h-[128px] md:w-[128px] hover:border hover:border-[#5D8EFE] h-[92px] w-[92px] rounded-full bg-[#2F67E6] bg-opacity-20  hover:bg-opacity-60 flex items-center justify-center flex-col ${
+              contactToggle && 'bg-opacity-60  border border-[#5D8EFE]'
             }`}
           >
             <span className="text-center font-[600] md:text-[18px] text-sm leading-[28px]">
-              CONTACT <br /> US
+              CONTACT
             </span>
           </button>
         </div>

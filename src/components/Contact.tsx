@@ -35,9 +35,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="body-font relative lg:w-2/3 flex flex-col items-center gap-[16px]">
-      <div className="flex flex-col md:items-cente items-center">
-        <span className="font-[400] text-[16px] leading-[24px] text-center md:text-start tracking-wide ">
+    <section className="relative w-full flex flex-col gap-[16px] ">
+      <div className="flex flex-col items-start">
+        <span className="font-[400] text-[16px] leading-[24px] text-start md:text-start ">
           Thank you for your interest. Feel free to contact us for any inquiries
           and we will get back to you as soon as possible.
         </span>
@@ -45,7 +45,7 @@ const Contact = () => {
       <div className="w-full">
         <form
           action={'https://formspree.io/f/xjvngdwp'}
-          className="flex flex-wrap flex-col"
+          className="flex flex-col"
           method="POST"
           onSubmit={handleSubmit}
         >

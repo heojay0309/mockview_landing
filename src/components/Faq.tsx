@@ -83,9 +83,9 @@ const Faq = ({
     },
   ];
   return (
-    <section className="relative lg:w-2/3 flex flex-col items-start gap-[16px]">
+    <section className="relative flex flex-col gap-[32px]">
       <div className="flex flex-col items-start">
-        <div className="font-[400] text-[16px] leading-[24px]">
+        <div className="font-[400] text-[16px] leading-[24px] text-start md:text-start ">
           In this FAQs section, we aim to address common questions and concerns
           asked in the past. If the answers we have provided below are unclear
           or need a further assistance, we are here to help! Feel free to{' '}
@@ -104,17 +104,20 @@ const Faq = ({
           for all inquries!
         </div>
       </div>
-      <div className="border-2 border-gray-500 p-2 overflow-y-auto md:max-h-[400px] max-h-[300px] flex flex-col gap-[16px] ">
+      <div className="border-2 border-gray-500 md:text-justify rounded-md overflow-y-auto md:max-h-[400px] max-h-[300px] flex flex-col md:gap-[32px] gap-[16px] md:p-[16px] p-[4px] py-[8px]">
         {questions.map((question, index) => {
           return (
-            <div key={index} className="flex flex-col gap-[8px]">
-              <div className="flex gap-[8px] font-[600] opacity-100">
-                <div>{index + 1 + '. '}</div>
-                <h1>{question.question}</h1>
+            <div
+              key={index}
+              className="flex md:pr-[64px] px-[16px] md:pl-[0px] flex-col gap-[8px]"
+            >
+              <div className="flex gap-[4px] font-[600] opacity-100 md:text-[18px] text-[16px]">
+                <div className="">
+                  {<span>{index + 1 + '. '}</span>}
+                  {question.question}
+                </div>
               </div>
-              <div className="indent-2 font-[400]  opacity-60">
-                {question.answer}
-              </div>
+              <div className=" font-[400] opacity-60">{question.answer}</div>
             </div>
           );
         })}

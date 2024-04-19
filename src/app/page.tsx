@@ -12,30 +12,12 @@ import Fourth from '@/components/Fourth';
 import Fifth from '@/components/Fifth';
 export default function Home() {
   return (
-    <div
-      id="home"
-      className="flex flex-col px-[32px] gap-[64px] md:gap-[0px]  md:pb-[128px]  py-[64px]"
-    >
+    <div className="flex flex-col px-[32px] gap-[64px] md:gap-[0px]  md:pb-[128px] py-[64px]">
       <Intro />
       <Second />
       <Third />
       <Fourth />
       <Fifth />
-      {/* <div className="flex justify-center items-center bg-white"> */}
-      {/* <Waitlist /> */}
-      {/* </div> */}
-      {/* <div className=" hero mb-80 md:mt-0 mt-80">
-        <Hero />
-      </div>
-      <div data-animated className=" scroller md:mb-80">
-        <Articles />
-      </div>
-      <div className="w-full  ">
-        <About />
-      </div>
-      <div className="">
-        <Contact />
-      </div> */}
     </div>
   );
 }
