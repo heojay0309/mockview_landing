@@ -15,7 +15,8 @@ const config: Config = {
       animation: {
         'ping-slow': 'ping 2s infinite',
         'bounce-slow': 'bounce 4s infinite ',
-        blink: 'blink 3s infinite',
+        // blink: 'blink 3s infinite',
+        blink: 'blink 1s step-end infinite',
       },
       keyframes: {
         bounce: {
@@ -29,6 +30,10 @@ const config: Config = {
           },
         },
         blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        dissolve: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0' },
         },

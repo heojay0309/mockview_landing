@@ -1,86 +1,117 @@
-import { FaKey } from 'react-icons/fa';
+'use client';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Third = () => {
-  return (
-    <div className="w-full flex text-white  md:flex-row flex-col md:h-[804px] md:min-h-[804px] min-h-[740px] md:gap-[0px] justify-around gap-[128px] pt-[128px] md:pt-[0px]">
-      <section className="md:w-1/3 flex md:h-full md:p-[64px]">
-        <div className="flex flex-col gap-[16px] md:h-full justify-center">
-          <h1 className="font-[600] md:text-[48px] text-[28px] md:leading-[70px] leading-[64px] leading-tighter-[2%] text-center md:text-start">
-            &quot;Solving technical problems under the pressure is no longer a
-            problem&quot;
-          </h1>
-        </div>
-      </section>
-      <section className="md:flex-1 flex items-center justify-center md:px-[64px] pt-[64px] md:py-[0px] flex-row-reverse w-full">
-        <div className="flex flex-col md:w-5/6 justify-start gap-[32px]">
-          <div className="flex md:items-center w-full gap-[32px]">
-            <div className="flex flex-col self-center">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] hover:border hover:border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-60  flex items-center justify-center flex-col">
-                <span className="text-green-500 font-[600] md:text-[32px] text-xl leading-[28px] text-center">
-                  {/* {'?'} */}
-                  {'</>'}
-                </span>
-              </div>
-            </div>
-            <div className="border-[#686868] border-t-4 flex-1"></div>
-            <div className="flex flex-col md:gap-[16px] h-full self-center justify-center gap-[8px] max-w-[416px] break-words">
-              <h1 className="font-[600] md:text-[32px] text-[24px] leading-[36px] ">
-                Solve Correctly
-              </h1>
-              <span className="font-[500] text-[14px] md:text-[16px] leading-[24px] whitespace-normal">
-                Your technical interviewer will provide you with randomized
-                algorithm questions. Get used to walking through your approach
-                and solving them correctly.
-              </span>
-            </div>
-          </div>
+  const [videoHover, setVideoHover] = useState(false);
+  const [realTimeHover, setRealTimeHover] = useState(false);
+  const [dynamicHover, setDynamicHover] = useState(false);
+  const [hovered, setHovered] = useState<string | null>(null);
 
-          <div className="flex h-full md:items-center gap-[32px]">
-            <div className="flex flex-col self-center">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] hover:border hover:border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-60  flex items-center justify-center flex-col">
-                {' '}
-                <span className="text-green-500 font-[600] md:text-[32px] text-xl leading-[28px] text-center">
-                  {' >_'}
-                </span>
-              </div>
-            </div>
-            <div className="border-[#686868] border-t-4 flex-1"></div>
-            <div className="flex flex-col md:gap-[16px] h-full  self-center justify-center gap-[8px] max-w-[416px] break-words">
-              <h1 className="font-[600] md:text-[32px] text-[24px] leading-[36px] ">
-                Use Consoles
-              </h1>
-              <span className="font-[500] text-[14px] md:text-[16px] leading-[24px] whitespace-normal">
-                It&apos; a best practice to add logs on your code when debugging
-                your solutions during the interview. You may try running the
-                code to see the output and the console.
-              </span>
-            </div>
+  const sections = [
+    {
+      id: 'video',
+      title: 'Video Call Setup',
+      src: '/preps_dynamic.svg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+    },
+    {
+      id: 'time',
+      title: 'Real-Time',
+      src: '/preps_realtime.svg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+    },
+    {
+      id: 'dynamic',
+      title: 'Dynamic Scenarios',
+      src: '/preps_dynamic.svg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+    },
+  ];
+
+  return (
+    <main className="flex text-white items-center justify-center main text-[32px] leading-[36px] font-[600]">
+      <div className="flex peer parent-div group/item transition-all items-center gap-[64px] hover:gap-[32px] ease-out">
+        {sections.map((section) => (
+          <div
+            key={section.id}
+            className="flex child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group ease-out duration-300"
+            onMouseEnter={() => setHovered(section.id)}
+            onMouseLeave={() => setHovered(null)}
+          >
+            <Image
+              src={section.src}
+              height={160}
+              width={160}
+              alt={section.title}
+              className="group-hover:w-[320px] group-hover:h-[320px] ease-out duration-300"
+            />
+            <span
+              className={`transition-opacity duration-100 ${
+                hovered && hovered !== section.id ? 'opacity-0' : 'opacity-100'
+              }`}
+            >
+              {section.title}
+            </span>
+            <span className="invisible group-hover:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
+              {section.description}
+            </span>
           </div>
-          <div className="flex h-full md:items-center gap-[32px] group">
-            <div className="flex flex-col self-center">
-              <div className="md:h-[128px] md:w-[128px] h-[96px] hover:border hover:border-[#5D8EFE] w-[96px] opacity-90 rounded-full bg-[#2F67E6] bg-opacity-20 hover:bg-opacity-60  flex items-center justify-center flex-col">
-                {' '}
-                <span className="text-green-500 font-[600] lg:animate-blink lg:group-hover:animate-none md:text-[32px] text-xl leading-[28px] text-center">
-                  <FaKey />
-                </span>
-              </div>
-            </div>
-            <div className="border-[#686868] border-t-4 flex-1"></div>
-            <div className="flex flex-col md:gap-[16px] lg:blur-sm lg:group-hover:blur-none h-full self-center justify-center gap-[8px] max-w-[416px] break-words">
-              <h1 className="font-[600] md:text-[32px] text-[24px] leading-[36px] ">
-                Breathe and Focus
-              </h1>
-              <div className="font-[500] text-[14px] md:text-[16px] leading-[24px] whitespace-normal">
-                Stay calm and recall your preparation; you&apos;re set for
-                success. A steady breath helps you focus and brings out your
-                best performance. Trust in your prep and let your hard work
-                shine through in the interview.
-              </div>
-            </div>
-          </div>
+        ))}
+        {/* <div className="peer/video flex child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/video ease-out duration-300">
+          <Image
+            src="/preps_dynamic.svg"
+            height={160}
+            width={160}
+            alt="video"
+            className="group-hover/video:w-[320px] group-hover/video:h-[320px] ease-out duration-300"
+          />
+          <span className=" peer-hover/time:invisible visible name-div">
+            Video Call Setup
+          </span>
+          <span className="invisible group-hover/video:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris.
+          </span>
         </div>
-      </section>
-    </div>
+        <div className="peer/time flex group-hover child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/time">
+          <Image
+            src="/preps_realtime.svg"
+            height={160}
+            width={160}
+            alt="time"
+            className="group-hover/time:w-[320px] group-hover/time:h-[320px] ease-out duration-300"
+          />
+          <span className="peer-hover/video:invisible ">Real-Time</span>
+          <span className="invisible group-hover/time:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris.
+          </span>
+        </div>
+        <section className="peer/dynamic flex child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/dynamic">
+          <Image
+            src="/preps_dynamic.svg"
+            height={160}
+            width={160}
+            alt="dynamic"
+            className="group-hover/dynamic:w-[320px] group-hover/dynamic:h-[320px] ease-out duration-300"
+          />
+          <span className="group-hover/video:invisible visible">
+            Dynamic Scenarios
+          </span>
+          <span className="invisible group-hover/dynamic:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris.
+          </span>
+        </section> */}
+      </div>
+    </main>
   );
 };
 

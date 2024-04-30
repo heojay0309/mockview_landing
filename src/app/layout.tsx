@@ -10,8 +10,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'PrepAI',
-  description: 'Interview Prep, Redefined',
+  title: 'preps',
+  description: 'Prepare Perfect and Present',
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} `}>
-        <div className="relative z-10 w-full justify-between flex  flex-col bg-gradient-to-b from-[#010E21] via-slate-700 to-[#010E21]">
+        <div className="relative z-10 w-full justify-between flex flex-col bg-[#000210]">
           <Navbar />
           <div className="flex-1">{children}</div>
           <Footer />

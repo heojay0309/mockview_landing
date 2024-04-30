@@ -9,19 +9,23 @@ const Navbar = () => {
 
   return (
     // <nav className="transition-color duration-500 body-font w-full fixed md:px-[64px] md:py-[28px] px-[32px] py-[14px] bg-transparent">
-    <nav className=" w-full  md:px-[64px] md:py-[28px] px-[32px] py-[14px] bg-transparent">
+    <nav className="w-full md:px-[64px] md:py-[28px] px-[32px] py-[14px]">
       <div className="flex items-center justify-between">
-        <div className="px-[32px] py-[8px] hidden md:flex md:invisible rounded-[4px]">
+        {/* <div className="px-[32px] py-[8px] hidden md:flex md:invisible rounded-[4px]">
           <span>Enter App</span>
-        </div>
+        </div> */}
         <Link href="/" className="flex gap-[4px]">
-          <h1 className="text-[#3e66de] text-[32px] leading-[24px] font-[600]">
-            Prep
+          <h1 className="text-white text-[24px] leading-[24px] font-[700]">
+            preps
           </h1>
-          <span className=" text-[32px] leading-[24px] self-center font-[600] text-white">
-            AI
-          </span>
         </Link>
+        <Image
+          alt={'preps'}
+          src="/preps_icon_color.svg"
+          height={37.09}
+          width={27.17}
+        />
+
         <Link
           href="https://www.beta.prepai.dev"
           className=" bg-[#2F67E6] border border-[#5D8EFE] md:px-[32px] md:py-[8px] px-[16px] py-[4px] hover:bg-opacity-90 text-white rounded-[4px]"

@@ -22,7 +22,6 @@ const About = () => {
               </p>
             </div>
           </div>
-
           <div
             data-direction="right"
             className="flex items-center lg:w-3/5 mx-auto features border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col"
