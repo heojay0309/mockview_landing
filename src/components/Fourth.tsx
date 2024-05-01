@@ -105,12 +105,14 @@ const Fourth = () => {
           <h1 className="font-[600] text-[24px] leading-[28px]">
             {selectedQuestion.question}
           </h1>
-          <span className="text-[16px] leading-[24px] font-[400]">
-            {selectedQuestion.description1}
-          </span>
-          <span className="text-[16px] leading-[24px] font-[400]">
-            {selectedQuestion.description2}
-          </span>
+          <div className=" max-h-[204px] overflow-y-scroll">
+            <span className="text-[16px] leading-[24px] font-[400]">
+              {selectedQuestion.description1}
+            </span>
+            <span className="text-[16px] leading-[24px] font-[400]">
+              {selectedQuestion.description2}
+            </span>
+          </div>
         </div>
       </div>
     </div>

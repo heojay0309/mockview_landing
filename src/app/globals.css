@@ -480,3 +480,20 @@ Initial state of the title .title-enter {
     opacity: 0;
   }
 } */
+
+.cursor {
+  position: absolute;
+  width: 16px; /* Customize the width for a thicker caret */
+  /* border: 1px; */
+  height: 2px;
+  /* border-color: white; */
+  background-color: white;
+  animation: blink 1s steps(5, start) infinite;
+  visibility: visible; /* Initially hidden */
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
