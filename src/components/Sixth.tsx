@@ -204,7 +204,7 @@ const Sixth = () => {
 
   return (
     <div
-      className={`max-w-[1440px] ${source.className} mx-auto w-full min-h-[436px] max-h-none gap-[32px] flex flex-col text-white`}
+      className={`max-w-[1440px] ${source.className}  w-full min-h-[436px] max-h-none gap-[32px] flex flex-col text-white`}
     >
       <h1 className="font-[600] text-[48px] leading-[64px] tracking-[4%]">
         Contact Us

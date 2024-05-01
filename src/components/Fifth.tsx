@@ -39,7 +39,7 @@ const Fifth = () => {
         </h1>
         <Link
           href="https://www.beta.prepai.dev"
-          className=" bg-gradient-to-r from-[#00D1FF] to-[#001AFF] gap-[10px] px-[32px] border border-[#5D8EFE] py-[8px] hover:bg-opacity-90 text-white rounded-[4px]"
+          className=" bg-[#001AFF] gap-[10px] px-[32px] border border-[#5D8EFE] py-[8px] hover:bg-opacity-90 text-white rounded-[4px]"
         >
           <span className="text-[16px] leading-[24px] font-[600]">
             Enter App

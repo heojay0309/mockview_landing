@@ -61,55 +61,6 @@ const Third = () => {
             </span>
           </div>
         ))}
-        {/* <div className="peer/video flex child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/video ease-out duration-300">
-          <Image
-            src="/preps_dynamic.svg"
-            height={160}
-            width={160}
-            alt="video"
-            className="group-hover/video:w-[320px] group-hover/video:h-[320px] ease-out duration-300"
-          />
-          <span className=" peer-hover/time:invisible visible name-div">
-            Video Call Setup
-          </span>
-          <span className="invisible group-hover/video:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris.
-          </span>
-        </div>
-        <div className="peer/time flex group-hover child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/time">
-          <Image
-            src="/preps_realtime.svg"
-            height={160}
-            width={160}
-            alt="time"
-            className="group-hover/time:w-[320px] group-hover/time:h-[320px] ease-out duration-300"
-          />
-          <span className="peer-hover/video:invisible ">Real-Time</span>
-          <span className="invisible group-hover/time:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris.
-          </span>
-        </div>
-        <section className="peer/dynamic flex child-div hover-target flex-col items-center justify-center w-full gap-[32px] h-full relative hover:flex-grow group/dynamic">
-          <Image
-            src="/preps_dynamic.svg"
-            height={160}
-            width={160}
-            alt="dynamic"
-            className="group-hover/dynamic:w-[320px] group-hover/dynamic:h-[320px] ease-out duration-300"
-          />
-          <span className="group-hover/video:invisible visible">
-            Dynamic Scenarios
-          </span>
-          <span className="invisible group-hover/dynamic:visible ease-out duration-100 text-center font-[500] leading-[24px] text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris.
-          </span>
-        </section> */}
       </div>
     </main>
   );
