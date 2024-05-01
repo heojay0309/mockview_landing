@@ -1,12 +1,4 @@
-const Faq = ({
-  setContactToggle,
-  setFaqToggle,
-  setIsTransitioning,
-}: {
-  setFaqToggle: (val: boolean) => void;
-  setContactToggle: (val: boolean) => void;
-  setIsTransitioning: (val: boolean) => void;
-}) => {
+const Faq = ({}: {}) => {
   const questions = [
     {
       question: 'What is PrepAI?',
@@ -83,33 +75,21 @@ const Faq = ({
     },
   ];
   return (
-    <section className="relative flex flex-col gap-[32px]">
+    <section className="relative flex flex-col gap-[32px] text-white">
       <div className="flex flex-col items-start">
         <div className="font-[400] text-[16px] leading-[24px] text-start md:text-start ">
           In this FAQs section, we aim to address common questions and concerns
           asked in the past. If the answers we have provided below are unclear
           or need a further assistance, we are here to help! Feel free to{' '}
-          <button
-            className="font-[500] text-blue-400"
-            onClick={() => {
-              setIsTransitioning(true);
-              setTimeout(() => {
-                setContactToggle(true);
-                setFaqToggle(false);
-              }, 300);
-            }}
-          >
-            contact us
-          </button>{' '}
-          for all inquries!
+          contact us for all inquries!
         </div>
       </div>
-      <div className="border-2 border-gray-500 md:text-justify rounded-md overflow-y-auto md:max-h-[400px] max-h-[300px] flex flex-col md:gap-[32px] gap-[16px] md:p-[16px] p-[4px] py-[8px]">
+      <div className="md:text-justify overflow-y-auto flex flex-col md:gap-[32px] gap-[16px] py-[8px]">
         {questions.map((question, index) => {
           return (
             <div
               key={index}
-              className="flex md:pr-[64px] px-[16px] md:pl-[0px] flex-col gap-[8px]"
+              className="flex  px-[16px] md:pl-[0px] flex-col gap-[8px]"
             >
               <div className="flex gap-[4px] font-[600] opacity-100 md:text-[18px] text-[16px]">
                 <div className="">

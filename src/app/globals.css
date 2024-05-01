@@ -44,6 +44,16 @@
   /* width: 100vw; */
   /* max-width: 1440px; */
 }
+.subSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.subSection .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 .radial {
   border-radius: 50%;

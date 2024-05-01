@@ -41,8 +41,8 @@ const Sixth = () => {
       setTimeout(() => setMessage(''), 5000);
       setEmailInput('');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]);
+
   useEffect(() => {
     const handleScroll = () => updateCaretPosition();
     const textarea = inputRef.current;
@@ -59,6 +59,7 @@ const Sixth = () => {
       };
     }
   }, []);
+
   const updateCaretPosition = () => {
     const textarea = inputRef.current;
     const caret = caretRef.current;
@@ -76,10 +77,6 @@ const Sixth = () => {
 
     div.textContent = textarea.value.substr(0, position);
 
-    // Append the dummy div to the body to avoid any container style interference
-
-    // Set the text content up to the selection
-
     // Create a span at the end to get the position
     const span = document.createElement('span');
     span.textContent = textarea.value.substr(position) || '.';
@@ -89,7 +86,6 @@ const Sixth = () => {
     document.body.appendChild(div);
     // Calculate position based on the dummy div
     const { offsetLeft, offsetTop } = span;
-
     // Position the caret
     caret.style.left = `${offsetLeft}px`;
     caret.style.top = `${offsetTop}px`;
@@ -97,39 +93,6 @@ const Sixth = () => {
 
     // Clean up by removing the dummy div from the DOM
     document.body.removeChild(div);
-    // if (!inputRef.current) return;
-    // const textarea = inputRef.current;
-    // const caret = caretRef.current;
-    // if (!textarea || !caret || !textarea.parentNode) return;
-
-    // // Create a dummy div to calculate the position
-    // const div = document.createElement('div');
-    // div.style.position = 'absolute';
-    // div.style.visibility = 'invisible';
-    // div.style.whiteSpace = 'pre-wrap';
-    // div.style.font = 'inherit';
-    // // div.style.width = '800px';
-
-    // // Append the dummy div to the parent of the textarea
-    // textarea.parentNode.insertBefore(div, textarea.nextSibling);
-
-    // // Set the text content up to the selection
-    // div.textContent = textarea.value.substr(0, textarea.selectionStart);
-    // div.style.height = `${textarea.scrollTop}px`; // Adjust for scroll
-
-    // // Create a span at the end to get the position
-    // const span = document.createElement('span');
-    // span.textContent = '|';
-    // div.appendChild(span);
-
-    // // Position the caret
-    // caret.style.left = `${span.offsetLeft}px`;
-    // caret.style.top = `${span.offsetTop}px`;
-    // // caret.style.height = `${span.offsetHeight}px`;
-    // caret.style.visibility = 'visible'; // Make the caret visible
-
-    // // Clean up by removing the dummy div from the DOM
-    // textarea.parentNode.removeChild(div);
   };
 
   const getTextWidth = (text: string, font: string): number => {
@@ -202,7 +165,7 @@ const Sixth = () => {
 
   return (
     <div
-      className={`max-w-[1440px] ${source.className}  w-full min-h-[436px] max-h-none gap-[32px] flex flex-col text-white`}
+      className={`${source.className} w-full min-h-[436px] max-h-none gap-[32px] flex flex-col text-white py-[64px]`}
     >
       <h1 className="font-[600] text-[48px] leading-[64px] tracking-[4%]">
         Contact Us
@@ -268,6 +231,8 @@ const Sixth = () => {
               ref={inputRef}
               rows={countRows + 1}
               wrap="soft"
+              name="message"
+              id="message"
               onChange={(e) => handleMessageLines(e)}
               onFocus={(e) => handleMessageLines(e)}
               onClick={handleClick}
