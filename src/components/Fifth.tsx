@@ -39,9 +39,16 @@ const Fifth = () => {
         </h1>
         <Link
           href="https://www.beta.prepai.dev"
-          className=" bg-[#001AFF] gap-[10px] px-[32px] border border-[#5D8EFE] py-[8px] hover:bg-opacity-90 text-white rounded-[4px]"
+          className=" bg-[#2C588E] z-auto relative gap-[10px] px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 text-white rounded-[4px] "
         >
-          <span className="text-[16px] leading-[24px] font-[600]">
+          <div className="flex w-full items-center justify-center overflow-clip h-full absolute px-[32px] py-[8px]">
+            <div className="bg-[#00F0FF] bg-blend-overlay mix-blend-overlay blur-lg opacity-70 rounded-full h-[185px] w-[185px] circle-left overflow-clip"></div>
+            <div className="bg-[#0047FF] bg-blend-overlay mix-blend-overlay blur-lg opacity-70 rounded-full h-[185px] w-[185px] circle-right overflow-clip"></div>
+            <span className="text-[16px] leading-[24px] font-[600] hidden">
+              Enter App
+            </span>
+          </div>
+          <span className="text-[16px] leading-[24px] font-[600] z-auto">
             Enter App
           </span>
         </Link>

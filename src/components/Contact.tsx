@@ -21,7 +21,6 @@ const Contact = () => {
 
       // Handle the response from Formspree
       if (response.ok) {
-        // Form submission was successful, handle accordingly
         // You could clear the form or show a success message
         console.log('Form submitted successfully!');
       } else {

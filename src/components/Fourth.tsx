@@ -49,7 +49,7 @@ const Fourth = () => {
       <div className="w-15/36 h-full">
         <div className="flex flex-col items-center justify-center gap-[64px] w-full h-full">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
-            Bespoke Interview Prep. For anyone. For anywhere.
+            Bespoke Interview Prep. For anyone. From anywhere.
           </h1>
           <div className="flex flex-col gap-[16px] w-full">
             {questions.map((question) => (
@@ -100,9 +100,10 @@ const Fourth = () => {
           alt={selectedQuestion.id}
           width={320}
           height={320}
+          priority
         />
         <div className="flex flex-col gap-[16px]">
-          <h1 className="font-[600] text-[24px] leading-[28px]">
+          <h1 className="font-[600] text-[32px] leading-[28px]">
             {selectedQuestion.question}
           </h1>
           <div className=" max-h-[204px] overflow-y-scroll">

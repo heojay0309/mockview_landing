@@ -37,6 +37,9 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0' },
         },
+        circle: {
+          
+        }
       },
       letterSpacing: {
         DEFAULT: '-0.01em',

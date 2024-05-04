@@ -90,7 +90,6 @@ const Sixth = () => {
     caret.style.left = `${offsetLeft}px`;
     caret.style.top = `${offsetTop}px`;
     caret.style.visibility = 'visible'; // Make the caret visible
-
     // Clean up by removing the dummy div from the DOM
     document.body.removeChild(div);
   };
@@ -165,7 +164,7 @@ const Sixth = () => {
 
   return (
     <div
-      className={`${source.className} w-full min-h-[436px] max-h-none gap-[32px] flex flex-col text-white py-[64px]`}
+      className={`${source.className} w-full min-h-[872px] justify-center max-h-none gap-[32px] flex flex-col text-white py-[64px]`}
     >
       <h1 className="font-[600] text-[48px] leading-[64px] tracking-[4%]">
         Contact Us

@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} `}>
-        <div className="relative z-10  justify-between flex flex-col bg-[#000210] ">
+        <div className="relative z-10 justify-between flex flex-col bg-[#000210] ">
           <div className="max-w-[1440px] mx-auto">
             <Navbar />
-            <div className="flex-1 ">{children}</div>
+            <div className="flex-1">{children}</div>
             <Footer />
           </div>
           <Toaster />
