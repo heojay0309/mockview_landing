@@ -30,7 +30,7 @@ const Third = () => {
   ];
 
   return (
-    <main className="flex text-white items-center justify-between main text-[32px] leading-[36px] font-[600]">
+    <main className="flex  items-center justify-between main text-[32px] leading-[36px] font-[600]">
       <div
         className={`flex transition-all items-center w-full ease-out h-full  ${
           hovered && hovered !== null && ''
@@ -115,7 +115,7 @@ export default Third;
 //   ];
 
 //   return (
-//     <main className="flex text-white items-center justify-center main text-[32px] leading-[36px] font-[600]">
+//     <main className="flex  items-center justify-center main text-[32px] leading-[36px] font-[600]">
 //       <div
 //         className={`flex peer parent-div group/item transition-all items-center w-full  gap-[64px] ease-out h-full ${
 //           hovered && 'gap-[32px]'

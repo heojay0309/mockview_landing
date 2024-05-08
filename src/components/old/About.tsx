@@ -10,7 +10,7 @@ const About = () => {
               <div className="rounded-full bg-gray-800 sm:w-32 sm:h-32 h-20 w-20 inline-flex justify-center items-center text-indigo-400">
                 <GiArtificialIntelligence size={80} />
               </div>
-              <h2 className="text-white text-lg title-font leading-snug font-medium mb-2">
+              <h2 className=" text-lg title-font leading-snug font-medium mb-2">
                 Tailored Just For You
               </h2>
               <p className="leading-relaxed text-base ">
@@ -40,7 +40,7 @@ const About = () => {
               </svg>
             </div>
             <div className="flex-grow sm:text-left  text-center mt-6 sm:mt-0">
-              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
+              <h2 className=" leading-snug  text-lg title-font font-medium mb-2">
                 Be Calm, Solve Algos
               </h2>
               <p className="leading-relaxed text-base">
@@ -72,7 +72,7 @@ const About = () => {
 
           <div className="flex items-center lg:w-3/5 mx-auto features border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
+              <h2 className=" leading-snug  text-lg title-font font-medium mb-2">
                 Technical Speaking
               </h2>
               <p className="leading-relaxed text-base">
@@ -153,7 +153,7 @@ const About = () => {
             </div>
 
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ">
-              <h2 className="text-white leading-snug  text-lg title-font font-medium mb-2">
+              <h2 className=" leading-snug  text-lg title-font font-medium mb-2">
                 Post-Interview Feedback
               </h2>
               <p className="leading-relaxed text-base">
@@ -179,7 +179,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          {/* <button className="flex mt-10 items-center mx-auto  text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          {/* <button className="flex mt-10 items-center mx-auto   bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Try Now!
           </button> */}
         </div>

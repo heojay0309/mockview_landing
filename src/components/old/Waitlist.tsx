@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useFormStatus, useFormState } from 'react-dom';
 import { waitlistSignup } from '@/app/actions';
-import { useToast } from './ui/use-toast';
+import { useToast } from '../ui/use-toast';
 const initialState = {
   message: null,
 };
@@ -42,7 +42,7 @@ const Waitlist = () => {
           </div>
           <button
             type="submit"
-            className="w-[40%] mt-2 text-black py-3 px-4 text-[13px] bg-yellow-300 font-semibold rounded-md hover:bg-blue-700 disabled:bg-blue-300"
+            className="w-[40%] mt-2 py-3 px-4 text-[13px] bg-yellow-300 font-semibold rounded-md hover:bg-blue-700 disabled:bg-blue-300"
             disabled={pending}
           >
             GET EARLY ACCESS

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex flex-col md:px-[64px] px-[32px] gap-[32px] py-[32px] text-white">
+    <div className="flex flex-col md:px-[64px] px-[32px] gap-[32px] py-[32px] ">
       <h1 className="leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Privacy Policy
       </h1>

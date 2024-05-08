@@ -290,7 +290,7 @@
 }
 
 @keyframes circle-left {
-  0% {
+  /* 0% {
     transform: translate(-88px, 0px);
   }
   25% {
@@ -304,22 +304,27 @@
   }
   100% {
     transform: translate(-88px, 0px);
-  }
-  /* 0% {
-    transform: translate(0px, 0px);
+  } */
+  0% {
+    transform: translate(-80px, 0px);
+    transition: transform;
   }
   25% {
-    transform: translate(80px, -72px);
+    transform: translate(0px, 72px);
+    transition: transform;
   }
   50% {
-    transform: translate(146px, 0px);
+    transform: translate(68px, 0px);
+    transition: transform;
   }
   75% {
-    transform: translate(35px, 72px);
+    transform: translate(0px, -80px);
+    transition: transform;
   }
   100% {
-    transform: translate(0px, 0px);
-  } */
+    transform: translate(-80px, 0px);
+    transition: transform;
+  }
 }
 .circle-left {
   position: absolute;
@@ -329,49 +334,38 @@
   top: 0px;
   height: 185px;
   width: 185px;
-  animation: circle-left 5s infinite;
+  animation: circle-left 4s infinite ease-in-out;
 }
 @keyframes circle-right {
   0% {
     transform: translate(80px, 0px);
+    transition: transform;
   }
   25% {
     transform: translate(0px, -72px);
+    transition: transform;
   }
   50% {
     transform: translate(-68px, 0px);
+    transition: transform;
   }
   75% {
     transform: translate(0px, 80px);
+    transition: transform;
   }
   100% {
     transform: translate(80px, 0px);
+    transition: transform;
   }
-  /* 0% {
-    transform: translate(0px, 0px);
-  }
-  25% {
-    transform: translate(-80px, 72px);
-  }
-  50% {
-    transform: translate(-146px, 0px);
-  }
-  75% {
-    transform: translate(-35px, -72px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  } */
 }
+
 .circle-right {
   position: absolute;
-  /* left: 56px;
-  top: -72px; */
   left: 0px;
   top: 0px;
   height: 185px;
   width: 185px;
-  animation: circle-right 5s infinite;
+  animation: circle-right 4s infinite ease-in-out;
 }
 
 .scroll-watcher {
@@ -546,7 +540,7 @@ Initial state of the title .title-enter {
   height: 2px;
   /* border-color: white; */
   background-color: white;
-  animation: blink 1s steps(5, start) infinite;
+  animation: blink 1s steps(4, start) infinite;
   visibility: visible; /* Initially hidden */
 }
 

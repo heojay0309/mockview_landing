@@ -2,8 +2,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Contact from './Contact';
-import Faq from './Faq';
 const Fifth = () => {
   const base = 'Start Your Journey';
   const [select, setSelect] = useState<string>(base);
@@ -25,7 +23,7 @@ const Fifth = () => {
   }, [faqToggle, contactToggle]);
 
   return (
-    <div className="main flex items-center justify-center text-white relative">
+    <div className="main flex items-center justify-center relative">
       <Image
         src={'/preps_background.svg'}
         alt={'preps'}
@@ -39,11 +37,11 @@ const Fifth = () => {
         </h1>
         <Link
           href="https://www.beta.prepai.dev"
-          className=" bg-[#2C588E] z-auto relative gap-[10px] px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 text-white rounded-[4px] "
+          className=" bg-[#2C588E] z-auto relative gap-[10px] overflow-hidden  px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 rounded-[4px] "
         >
-          <div className="flex w-full items-center justify-center overflow-clip h-full absolute px-[32px] py-[8px]">
-            <div className="bg-[#00F0FF] bg-blend-overlay mix-blend-overlay blur-lg opacity-70 rounded-full h-[185px] w-[185px] circle-left overflow-clip"></div>
-            <div className="bg-[#0047FF] bg-blend-overlay mix-blend-overlay blur-lg opacity-70 rounded-full h-[185px] w-[185px] circle-right overflow-clip"></div>
+          <div className="flex overflow-hidden h-[160px] bg-blend-overlay mix-blend-overlay  items-center justify-center animate-spin-slow absolute px-[32px] py-[8px] w-[160px]">
+            <div className="bg-[#00F0FF]  blur-lg opacity-70 mix-blend-overlay  rounded-full h-[185px] w-[185px] circle-left overflow-clip "></div>
+            <div className="bg-[#0047FF]  blur-lg opacity-70 mix-blend-overlay  rounded-full h-[185px] w-[185px] circle-right overflow-clip"></div>
             <span className="text-[16px] leading-[24px] font-[600] hidden">
               Enter App
             </span>

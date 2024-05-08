@@ -1,10 +1,8 @@
 'use client';
 const Second = () => {
   return (
-    <main className="flex flex-col items-center text-white gap-[64px] main justify-center">
-      <h1 className="font-[600] leading-[40px] text-[32px]">
-        Practice Interview Skills
-      </h1>
+    <main className="flex flex-col items-center  gap-[64px] main justify-center">
+      <h1 className="font-[600] leading-[40px] text-[32px]"></h1>
       <iframe
         src="https://drive.google.com/file/d/1EZK3yCLyCLwqYnqw7oOs-tBu2X8KPx8e/preview"
         width={960}

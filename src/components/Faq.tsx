@@ -75,7 +75,7 @@ const Faq = ({}: {}) => {
     },
   ];
   return (
-    <section className="relative flex flex-col gap-[32px] text-white">
+    <section className="relative flex flex-col gap-[32px] ">
       <div className="flex flex-col items-start">
         <div className="font-[400] text-[16px] leading-[24px] text-start md:text-start ">
           In this FAQs section, we aim to address common questions and concerns

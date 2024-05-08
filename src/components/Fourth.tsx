@@ -45,7 +45,7 @@ const Fourth = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   return (
-    <div className="main text-white w-full flex gap-[64px]">
+    <div className="main  w-full flex gap-[64px]">
       <div className="w-15/36 h-full">
         <div className="flex flex-col items-center justify-center gap-[64px] w-full h-full">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
@@ -68,9 +68,7 @@ const Fourth = () => {
                     : 'opacity-50'
                 }`}
               >
-                <span
-                  className={`font-[400] text-[20px] leading-[40px] text-white `}
-                >
+                <span className={`font-[400] text-[20px] leading-[40px]  `}>
                   {question.question}
                 </span>
                 <Image

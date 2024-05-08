@@ -22,11 +22,11 @@ const PolicyPage = () => {
 
   return (
     <div className="flex flex-col md:px-[64px] px-[32px] gap-[32px] py-[32px] h-screen">
-      <h1 className=" text-white leading-[64px] tracking-[4%] text-[48px] font-[600]">
+      <h1 className="  leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Terms & Policies
       </h1>
       <div className="border-b opacity-60"></div>
-      <section className="flex justify-between gap-[32px] text-white w-full h-full">
+      <section className="flex justify-between gap-[32px]  w-full h-full">
         {policies.map((el, index) => {
           return (
             <>
