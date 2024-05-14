@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <section className="relative w-full flex flex-col gap-[16px] ">
       <div className="flex flex-col items-start">
-        <span className="font-[400] text-[16px] leading-[24px] text-start md:text-start ">
+        <span className="font-[400] text-[16px] leading-[24px] text-start tablet:text-start ">
           Thank you for your interest. Feel free to contact us for any inquiries
           and we will get back to you as soon as possible.
         </span>
@@ -48,7 +48,7 @@ const Contact = () => {
           method="POST"
           onSubmit={handleSubmit}
         >
-          <div className="flex w-full flex-col md:flex-row justify-evenly md:gap-[16px] gap-[8px]">
+          <div className="flex w-full flex-col tablet:flex-row justify-evenly tablet:gap-[16px] gap-[8px]">
             <div className="relative w-full">
               <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                 Name

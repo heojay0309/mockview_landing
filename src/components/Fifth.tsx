@@ -29,10 +29,10 @@ const Fifth = () => {
         alt={'preps'}
         height={704}
         width={510}
-        className="absolute self-center -z-20"
+        className="absolute self-end -z-20 pb-[32px]"
       />
-      <div className="flex flex-col gap-[32px] items-center">
-        <h1 className="font-[600] text-[64px] leading-[72px]">
+      <div className="flex flex-col gap-[32px] items-center ">
+        <h1 className="font-[600] text-[64px] leading-[72px] text-center">
           Let&apos;s Start Prepping.
         </h1>
         <Link

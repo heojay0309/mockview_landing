@@ -14,7 +14,7 @@ const FormButton = () => {
   return (
     <button
       type="submit"
-      className="bg-[#2F67E6] border border-[#5D8EFE] md:px-[32px] md:py-[8px] px-[16px] py-[4px] hover:bg-opacity-90  rounded-[4px] h-[40px] w-[119px] flex items-center justify-center"
+      className="bg-[#2F67E6] border border-[#5D8EFE] tablet:px-[32px] tablet:py-[8px] px-[16px] py-[4px] hover:bg-opacity-90  rounded-[4px] h-[40px] w-[119px] flex items-center justify-center"
       aria-disabled={pending}
     >
       <span className="text-[16px] leading-[24px] font-[600] text-center self-center">
@@ -243,7 +243,7 @@ const Sixth = () => {
 
   return (
     <div
-      className={`${source.className} w-full max-w-[800px] h-full  justify-center max-h-none gap-[32px] flex flex-col  py-[64px]`}
+      className={`${source.className} w-full max-w-[800px] h-full min-h-[436px] justify-center max-h-none gap-[32px] flex flex-col  py-[64px]`}
     >
       <h1 className="font-[600] text-[48px] leading-[64px] tracking-[4%]">
         Contact Us
@@ -253,10 +253,10 @@ const Sixth = () => {
         id="formHeight"
         className="flex flex-col gap-[32px] max-w-[800px] flex-1 relative"
       >
-        <div className="text-[16px] text-start absolute ease-in-out duration-300">
+        <div className="text-[16px] top-[-28px] opacity-80 text-start absolute ease-in-out duration-300">
           {message}
         </div>
-        <div className=" flex flex-col font-[500] text-[24px] leading-[40px] bg-black">
+        <div className=" flex flex-col font-[500] text-[24px] leading-[40px] ">
           <div className="flex gap-[16px] items-center">
             <span className="leading-[40px]">1</span>
             <label className="opacity-50 leading-[24px] indent-4">
@@ -275,7 +275,7 @@ const Sixth = () => {
                 name="email"
                 required
                 onChange={(e) => setEmailInput(e.target.value)}
-                className={`bg-transparent  caret-transparent relative resize-none ml-[34px]  cursor-text max-h-none overflow-visible outline-none appearance-none flex-1 w-full `}
+                className={`bg-transparent caret-transparent relative resize-none ml-[34px]  cursor-text max-h-none overflow-visible outline-none appearance-none flex-1 w-full `}
               />
               <span
                 ref={caretRefsEmail}

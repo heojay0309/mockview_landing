@@ -25,7 +25,7 @@ const Waitlist = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.message]);
   return (
-    <div className=" bg-white hover:animate-none  shadow-lg shadow-gray-400 items-start justify-between border border-transparent rounded-lg md:p-16 p-[16px]">
+    <div className=" bg-white hover:animate-none  shadow-lg shadow-gray-400 items-start justify-between border border-transparent rounded-lg tablet:p-16 p-[16px]">
       <h1 className="text-[32px] font-[600] leading-[32px] tracking-wider">
         Join waitlist for Early Access
       </h1>

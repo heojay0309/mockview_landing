@@ -9,7 +9,9 @@ interface ISelected {
   question: string;
   src: string;
   description1: string;
-  description2: string;
+  description2?: string;
+  description3?: string;
+  description4?: string[];
 }
 
 const Fourth = () => {
@@ -27,16 +29,30 @@ const Fourth = () => {
       id: 'second',
       question: 'How does Preps work?',
       src: '/preps_face.svg',
-      description1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id._`,
+      description1: `We made prepping for your interviews as easy as 1, 2, 3`,
       description2: '',
+      description3: '',
+      description4: [
+        '1. Choose any topic you would like to practice',
+        '2. Meet your personalized AI interviewer',
+        '3. Receive actionable feedbacks on your strengths and weaknesses',
+      ],
     },
     {
       id: 'third',
       question: 'What are the simulations like?',
       src: '/preps_code.svg',
-      description1: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview. During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions.`,
-      description2:
+      description1: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview.`,
+      description2: `During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions.`,
+      description3:
         'Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.',
+    },
+    {
+      id: 'fourth',
+      question: 'Is Preps free to use?',
+      src: '/preps_code.svg',
+      description1: `Yes, it is 100% free to use! Our goal is to become the platform that'll guide our users towards career success. We plan to introduce our paid plans offering more features that will help your interview preps easier!`,
+      description2: '',
     },
   ];
   const [selectedQuestion, setSelectedQuestion] = useState<ISelected>(
@@ -45,8 +61,8 @@ const Fourth = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   return (
-    <div className="main  w-full flex gap-[64px]">
-      <div className="w-15/36 h-full">
+    <div className="main w-full flex  gap-[64px] py-[64px]">
+      <div className="w-1/3 tablet:w-15/36 h-full">
         <div className="flex flex-col items-center justify-center gap-[64px] w-full h-full">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
             Bespoke Interview Prep. For anyone. From anywhere.
@@ -68,7 +84,7 @@ const Fourth = () => {
                     : 'opacity-50'
                 }`}
               >
-                <span className={`font-[400] text-[20px] leading-[40px]  `}>
+                <span className={`font-[400] text-[20px] leading-[40px]`}>
                   {question.question}
                 </span>
                 <Image
@@ -89,7 +105,7 @@ const Fourth = () => {
         </div>
       </div>
       <div
-        className={`flex-1 flex flex-col gap-[64px] items-center h-full px-[64px] justify-center transition-all  ${
+        className={`flex-1  flex flex-col gap-[64px] w-full items-start h-full px-[64px] justify-start tablet:justify-center transition-all  ${
           isTransitioning ? 'fade-out' : 'fade-in'
         }`}
       >
@@ -99,18 +115,32 @@ const Fourth = () => {
           width={320}
           height={320}
           priority
+          className="self-center"
         />
-        <div className="flex flex-col gap-[16px]">
-          <h1 className="font-[600] text-[32px] leading-[28px]">
+        <div className="flex flex-col gap-[16px] tablet:max-h-[248px] max-h-[496px] overflow-scroll h-full">
+          <h1 className="font-[600] text-[24px] leading-[28px]">
             {selectedQuestion.question}
           </h1>
-          <div className=" max-h-[204px] overflow-y-scroll">
+          <div className="flex flex-col font-[400] space-y-[12px]">
             <span className="text-[16px] leading-[24px] font-[400]">
               {selectedQuestion.description1}
             </span>
-            <span className="text-[16px] leading-[24px] font-[400]">
+            <span className="text-[16px] leading-[24px] font-[400] ">
               {selectedQuestion.description2}
             </span>
+            <span className="text-[16px] leading-[24px] font-[400] ">
+              {selectedQuestion?.description3}
+            </span>
+            {selectedQuestion.description4?.map((desc, index) => {
+              return (
+                <div
+                  key={index}
+                  className=" flex-col font-[200] leading-[24px] text-[16px] flex"
+                >
+                  <ul>{desc}</ul>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

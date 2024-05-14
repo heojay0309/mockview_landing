@@ -21,16 +21,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} `}>
-        <div className="relative z-10 justify-between flex flex-col bg-[#000210] text-white">
-          <div className="max-w-[1440px] mx-auto">
-            <Navbar />
-            <div className="flex-1">{children}</div>
-            <Footer />
-          </div>
+      <body
+        className={`${inter.className} bg-pageBackground-light dark:bg-pageBackground-dark`}
+      >
+        <div className="relative z-10 justify-between flex flex-col text-white max-w-[1440px] mx-auto">
+          <Navbar />
+          <div className="flex-1">{children}</div>
+          <Footer />
           <Toaster />
+          <Analytics />
         </div>
-        <Analytics />
       </body>
     </html>
   );

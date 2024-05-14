@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex flex-col md:px-[64px] px-[32px] gap-[32px] py-[32px] ">
+    <div className="flex flex-col tablet:px-[64px] px-[32px] gap-[32px] py-[32px] ">
       <h1 className="leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Privacy Policy
       </h1>
@@ -14,13 +14,13 @@ const PrivacyPolicy = () => {
         </div>
         <div className="flex flex-col flex-1 gap-[32px]">
           <section className="flex flex-col gap-[16px] subSection">
-            <span className="text-[14px] md:text-[18px]">
+            <span className="text-[14px] tablet:text-[18px]">
               This privacy notice for PrepAI(&quot;we&quot;,&quot;us&quot;, or
               &quot;our&quot;), describes how and why we might collect, store,
               use, and/or share (&quot;process&quot;) your information when you
               use our services (&quot;Services&quot;), such as when you:
             </span>
-            <div className="md:pl-6 text-[14px] md:text-[18px] sub">
+            <div className="tablet:pl-6 text-[14px] tablet:text-[18px] sub">
               <li>
                 Visit our website at{' '}
                 <Link
@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
             </div>
           </section>
           <section className="flex flex-col gap-[16px] subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[600]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[600]">
               Information Collection
             </h2>
             <span>
@@ -59,10 +59,10 @@ const PrivacyPolicy = () => {
               below to find the section you are looking for.
             </span>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 What personal information do we process?{' '}
               </span>
-              <span className=" text-[14px] md:text-[18px]">
+              <span className=" text-[14px] tablet:text-[18px]">
                 When you visit, use, or navigate our Services, we may process
                 personal information depending on how you interact with us and
                 the Services, the choices you make, and the products and
@@ -70,19 +70,19 @@ const PrivacyPolicy = () => {
               </span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 Do we process any sensitive personal information?{' '}
               </span>
               <span>We do not process sensitive personal information.</span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 Do we receive any information from third parties?{' '}
               </span>
               <span>We do not receive any information from third parties.</span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 How do we process your information?{' '}
               </span>
               <span>
@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
               </span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 Do we share or sell your personal information?{' '}
               </span>
               <span>
@@ -103,7 +103,7 @@ const PrivacyPolicy = () => {
               </span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 How do we keep your information safe?{' '}
               </span>
               <span>
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
               </span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 What are your rights?{' '}
               </span>
               <span>
@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
               </span>
             </div>
             <div className="flex flex-col gap-[16px]">
-              <span className="text-[16px] md:text-[24px] font-[600]">
+              <span className="text-[16px] tablet:text-[24px] font-[600]">
                 How do you exercise your rights?{' '}
               </span>
               <span>
@@ -141,7 +141,7 @@ const PrivacyPolicy = () => {
             </div>
           </section>
           <section id="toc" className="flex flex-col gap-[32px]">
-            <h1 className="text-[24px] md:text-[32px] font-[500]">
+            <h1 className="text-[24px] tablet:text-[32px] font-[500]">
               TABLE OF CONTENTS
             </h1>
             <ul>
@@ -167,7 +167,7 @@ const PrivacyPolicy = () => {
             </ul>
           </section>
           <section id="1" className="flex flex-col gap-[16px] subSection">
-            <h1 className="text-[24px] md:text-[32px] font-[600]">
+            <h1 className="text-[24px] tablet:text-[32px] font-[600]">
               1. WHAT INFORMATION DO WE COLLECT?
             </h1>
             <div className=" italic text-[14px]">
@@ -209,7 +209,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section id="2" className="flex flex-col gap-[16px] subSection">
-            <h1 className="text-[24px] md:text-[32px] font-[600]">
+            <h1 className="text-[24px] tablet:text-[32px] font-[600]">
               2. HOW DO WE PROCESS YOUR INFORMATION?
             </h1>
             <div className="flex flex-row gap-[4px] italic text-[14px]">
@@ -269,7 +269,7 @@ const PrivacyPolicy = () => {
             </div>
           </section>
           <section id="3" className="flex flex-col gap-[16px]">
-            <h1 className="text-[24px] md:text-[32px] font-[600]">
+            <h1 className="text-[24px] tablet:text-[32px] font-[600]">
               3. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
             </h1>
             <div className="flex flex-row gap-[4px] italic text-[14px]">
@@ -307,7 +307,7 @@ const PrivacyPolicy = () => {
             </div>
           </section>
           <section id="4" className="flex flex-col gap-[16px]">
-            <h1 className="text-[24px] md:text-[32px] font-[600]">
+            <h1 className="text-[24px] tablet:text-[32px] font-[600]">
               {' '}
               4. HOW LONG DO WE KEEP YOUR INFORMATION?
             </h1>
@@ -340,14 +340,16 @@ const PrivacyPolicy = () => {
               it from any further processing until deletion is possible.
             </div>
           </section>
-          <h2 className="text-[24px] md:text-[32px] font-[600]">
+          <h2 className="text-[24px] tablet:text-[32px] font-[600]">
             CHANGES MADE ON PRIVACY POLICIES
           </h2>
           <span>
             We may update our Privacy Policy from time to time. We will notify
             you of any changes by posting the new policy on this page.
           </span>
-          <h2 className="text-[24px] md:text-[32px] font-[600]">CONTACT US</h2>
+          <h2 className="text-[24px] tablet:text-[32px] font-[600]">
+            CONTACT US
+          </h2>
           <span>
             If you have any questions about this Privacy Policy, please contact
             us at contact@prepai.dev

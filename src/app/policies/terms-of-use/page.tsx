@@ -1,6 +1,6 @@
 const TermsOfUse = () => {
   return (
-    <div className="flex flex-col md:px-[64px] px-[32px] gap-[32px] py-[32px] ">
+    <div className="flex flex-col tablet:px-[64px] px-[32px] gap-[32px] py-[32px] ">
       <h1 className="leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Terms of Service
       </h1>
@@ -12,19 +12,19 @@ const TermsOfUse = () => {
         </div>
         <div className="flex flex-col flex-1 gap-[32px]">
           <div className="flex flex-col gap-[16px]">
-            <span className="text-[16px] md:text-[18px]">
+            <span className="text-[16px] tablet:text-[18px]">
               Welcome to PrepAI!
             </span>
-            <span className="text-[14px] md:text-base">
+            <span className="text-[14px] tablet:text-base">
               By accessing or using our application, you agree to be bound by
               these terms of service.
             </span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Use of Service
             </h2>
-            <div className="md:pl-6 text-[14px] md:text-[18px] sub">
+            <div className="tablet:pl-6 text-[14px] tablet:text-[18px] sub">
               <li>You must be at least 10 years old to use our application.</li>
               <li>
                 You are responsible for maintaining the confidentiality of your
@@ -33,8 +33,10 @@ const TermsOfUse = () => {
             </div>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">Content</h2>
-            <div className="md:pl-6 text-[14px] md:text-[18px] sub">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
+              Content
+            </h2>
+            <div className="tablet:pl-6 text-[14px] tablet:text-[18px] sub">
               <li>
                 You retain rights to any content you submit to the application.
               </li>
@@ -45,21 +47,21 @@ const TermsOfUse = () => {
             </div>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Prohibited Conduct
             </h2>
             <span>
               You agree not to engage in prohibited conduct, including but not
               limited to:
             </span>
-            <div className="md:pl-6 text-[14px] md:text-[18px] sub">
+            <div className="tablet:pl-6 text-[14px] tablet:text-[18px] sub">
               <li>Illegal activities</li>
               <li>Harassment or abuse of other users.</li>
               <li>Distribution of harmful or offensive content.</li>
             </div>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Modifications to the Service
             </h2>
             <span>
@@ -68,7 +70,7 @@ const TermsOfUse = () => {
             </span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Termination
             </h2>
             <span>
@@ -77,7 +79,7 @@ const TermsOfUse = () => {
             </span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Disclaimers
             </h2>
             <span>
@@ -87,13 +89,13 @@ const TermsOfUse = () => {
             </span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Governing Law
             </h2>
             <span>These Terms are governed by the laws of US/California.</span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Changes to These Terms
             </h2>
             <span>
@@ -102,7 +104,7 @@ const TermsOfUse = () => {
             </span>
           </div>
           <div className="subSection">
-            <h2 className="text-[24px] md:text-[32px] font-[500]">
+            <h2 className="text-[24px] tablet:text-[32px] font-[500]">
               Contact Us
             </h2>
             <span>
