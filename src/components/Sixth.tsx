@@ -24,18 +24,6 @@ const FormButton = () => {
   );
 };
 
-/* 
-
-  {
-    
-
-  }
-
-
-
-
-*/
-
 const Sixth = () => {
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const [emailInput, setEmailInput] = useState<string>('');
@@ -43,6 +31,7 @@ const Sixth = () => {
   const caretRefsEmail = useRef<HTMLSpanElement>(null);
   const caretRef = useRef<HTMLSpanElement>(null);
   const [message, setMessage] = useState<string>('');
+  const [inputClick, setInputClick] = useState<string | null>(null);
   const [state, formAction] = useFormState(handleContactForm, {
     message: '',
   });
@@ -275,12 +264,16 @@ const Sixth = () => {
                 name="email"
                 required
                 onChange={(e) => setEmailInput(e.target.value)}
+                onFocus={() => setInputClick('email')}
+                onBlur={() => setInputClick(null)}
                 className={`bg-transparent caret-transparent relative resize-none ml-[34px]  cursor-text max-h-none overflow-visible outline-none appearance-none flex-1 w-full `}
               />
-              <span
-                ref={caretRefsEmail}
-                className="cursor ml-[32px] mt-[28px]"
-              ></span>
+              {inputClick === 'email' && (
+                <span
+                  ref={caretRefsEmail}
+                  className={`cursor ml-[32px] mt-[28px]`}
+                ></span>
+              )}
             </div>
           </div>
           <div className="flex gap-[16px] items-center">
@@ -314,6 +307,8 @@ const Sixth = () => {
               cols={45}
               name="message"
               onChange={(e) => autoAdjustHeight()}
+              onFocus={() => setInputClick('message')}
+              onBlur={() => setInputClick(null)}
               // onChange={(e) => handleMessageLines(e)}
               // onFocus={(e) => handleMessageLines(e)}
               // onClick={handleClick}
@@ -322,7 +317,12 @@ const Sixth = () => {
               // className="bg-blue-400 resize-none cursor-text ml-[64px] outline-none appearance-none w-full "
               // className={`bg-transparent bg-blue-400 resize-none  cursor-text outline-none appearance-none w-full `}
             ></textarea>
-            <span ref={caretRef} className="cursor ml-[64px] mt-[28px]"></span>
+            {inputClick === 'message' && (
+              <span
+                ref={caretRef}
+                className="cursor ml-[64px] mt-[28px]"
+              ></span>
+            )}
           </div>
         </div>
         <FormButton />
