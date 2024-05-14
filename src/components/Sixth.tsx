@@ -252,7 +252,6 @@ const Sixth = () => {
               #input your Email
             </label>
           </div>
-          {/* <div className="flex gap-[16px] items-center"> */}
           <div className="flex gap-[16px] relative items-center">
             <span className="leading-[28px]">2</span>
             <div className="flex gap-[16px] items-center  h-full w-full ">
@@ -282,12 +281,7 @@ const Sixth = () => {
               #input your Message
             </span>
           </div>
-          {/* <div className="flex gap-[16px] items-center relative h-full w-full "> */}
-
           <div className="flex relative w-full flex-1 flex-grow">
-            {/* <div className="flex gap-[4px] w-full relative group-focus  indent-4">
-            </div> */}
-
             <div className="flex flex-col h-full overflow-hidden absolute gap-[0px]">
               {lines.map((line, index) => {
                 return (
@@ -299,7 +293,6 @@ const Sixth = () => {
             </div>
             <span className="absolute left-11 w-full">{'>'}</span>
 
-            {/* <span className="absolute  top-[-4px] left-11 w-full">{'>'}</span> */}
             <textarea
               ref={inputRef}
               id="message"
@@ -309,13 +302,7 @@ const Sixth = () => {
               onChange={(e) => autoAdjustHeight()}
               onFocus={() => setInputClick('message')}
               onBlur={() => setInputClick(null)}
-              // onChange={(e) => handleMessageLines(e)}
-              // onFocus={(e) => handleMessageLines(e)}
-              // onClick={handleClick}
               className={`bg-transparent caret-transparent relative resize-none ml-[64px] cursor-text max-h-none overflow-visible outline-none appearance-none flex-1 w-full `}
-
-              // className="bg-blue-400 resize-none cursor-text ml-[64px] outline-none appearance-none w-full "
-              // className={`bg-transparent bg-blue-400 resize-none  cursor-text outline-none appearance-none w-full `}
             ></textarea>
             {inputClick === 'message' && (
               <span
