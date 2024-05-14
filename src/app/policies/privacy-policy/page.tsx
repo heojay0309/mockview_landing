@@ -24,10 +24,10 @@ const PrivacyPolicy = () => {
               <li>
                 Visit our website at{' '}
                 <Link
-                  href="https://www.prepai.dev"
+                  href="https://www.preps-ai.com"
                   className="underline text-blue-500"
                 >
-                  prepai.dev
+                  preps-ai.com
                 </Link>
                 , or any website of ours that links to this privacy notice
               </li>
@@ -135,8 +135,8 @@ const PrivacyPolicy = () => {
               <span>
                 {' '}
                 The easiest way to exercise your rights is by contacting us at
-                contact@prepai.dev. We will consider and act upon any request in
-                accordance with applicable data protection laws.
+                contact@preps-ai.com. We will consider and act upon any request
+                in accordance with applicable data protection laws.
               </span>
             </div>
           </section>
@@ -352,7 +352,7 @@ const PrivacyPolicy = () => {
           </h2>
           <span>
             If you have any questions about this Privacy Policy, please contact
-            us at contact@prepai.dev
+            us at contact@preps-ai.com
           </span>
         </div>
       </div>

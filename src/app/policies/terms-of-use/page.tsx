@@ -13,7 +13,7 @@ const TermsOfUse = () => {
         <div className="flex flex-col flex-1 gap-[32px]">
           <div className="flex flex-col gap-[16px]">
             <span className="text-[16px] tablet:text-[18px]">
-              Welcome to Preps!
+              Welcome to PrepsAI!
             </span>
             <span className="text-[14px] tablet:text-base">
               By accessing or using our application, you agree to be bound by
@@ -109,7 +109,7 @@ const TermsOfUse = () => {
             </h2>
             <span>
               If you have any questions about these Terms, please contact us at
-              contact@prepai.dev
+              contact@preps-ai.com
             </span>
           </div>
         </div>

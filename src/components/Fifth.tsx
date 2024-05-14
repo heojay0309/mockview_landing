@@ -36,7 +36,7 @@ const Fifth = () => {
           Let&apos;s Start Prepping.
         </h1>
         <Link
-          href="https://www.beta.prepai.dev"
+          href="https://www.beta.preps-ai.com"
           className=" bg-[#2C588E] z-auto relative gap-[10px] overflow-hidden  px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 rounded-[4px] "
         >
           <div className="flex overflow-hidden h-[160px] bg-blend-overlay mix-blend-overlay  items-center justify-center animate-spin-slow absolute px-[32px] py-[8px] w-[160px]">

@@ -543,6 +543,16 @@ Initial state of the title .title-enter {
   animation: blink 1s steps(4, start) infinite;
   visibility: visible; /* Initially hidden */
 }
+.light .cursor {
+  position: absolute;
+  width: 16px; /* Customize the width for a thicker caret */
+  /* border: 1px; */
+  height: 2px;
+  /* border-color: white; */
+  background-color: black;
+  animation: blink 1s steps(4, start) infinite;
+  visibility: visible; /* Initially hidden */
+}
 
 @keyframes blink {
   to {

@@ -21,7 +21,7 @@ const Navbar = () => {
           width={27.17 * 1.5}
         />
         <Link
-          href="https://www.beta.prepai.dev"
+          href="https://www.beta.preps-ai.com"
           className=" bg-[#2F67E6] border border-[#5D8EFE] tablet:px-[32px] tablet:py-[8px] px-[16px] py-[4px] hover:bg-opacity-90  rounded-[4px]"
         >
           <span className="text-[16px] leading-[24px] font-[600]">

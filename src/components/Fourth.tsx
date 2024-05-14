@@ -78,9 +78,9 @@ const Fourth = () => {
                   }, 300);
                 }}
                 key={question.question}
-                className={`flex justify-between w-full px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:opacity-60 ${
+                className={`flex justify-between w-full px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:text-white hover:opacity-60 ${
                   selectedQuestion.id === question.id
-                    ? 'opacity-100 bg-[#181C2E]'
+                    ? 'opacity-100 bg-[#181C2E] text-white'
                     : 'opacity-50'
                 }`}
               >

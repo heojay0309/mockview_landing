@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="flex flex-col px-[64px]">
       <Intro />
-      <Third />
       <Second />
+      <Third />
       <Fourth />
       <Fifth />
       <Sixth />
