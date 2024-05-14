@@ -13,7 +13,7 @@ const TermsOfUse = () => {
         <div className="flex flex-col flex-1 gap-[32px]">
           <div className="flex flex-col gap-[16px]">
             <span className="text-[16px] tablet:text-[18px]">
-              Welcome to PrepAI!
+              Welcome to Preps!
             </span>
             <span className="text-[14px] tablet:text-base">
               By accessing or using our application, you agree to be bound by

@@ -9,7 +9,7 @@ const PolicyPage = () => {
     {
       title: 'Terms of use',
       description:
-        'Terms that govern use of the products and services of PrepAI for individuals',
+        'Terms that govern use of the products and services of Preps for individuals',
       url: '/policies/terms-of-use',
     },
     {

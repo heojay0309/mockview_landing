@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
         <div className="flex flex-col flex-1 gap-[32px]">
           <section className="flex flex-col gap-[16px] subSection">
             <span className="text-[14px] tablet:text-[18px]">
-              This privacy notice for PrepAI(&quot;we&quot;,&quot;us&quot;, or
+              This privacy notice for PrepsAI(&quot;we&quot;,&quot;us&quot;, or
               &quot;our&quot;), describes how and why we might collect, store,
               use, and/or share (&quot;process&quot;) your information when you
               use our services (&quot;Services&quot;), such as when you:
