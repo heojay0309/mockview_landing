@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import QuestionContent from './wrapper/QuestionContent';
 
 interface ISelected {
   id: string;
@@ -50,50 +51,71 @@ const Fourth = () => {
     {
       id: 'fourth',
       question: 'Is Preps free to use?',
-      src: '/preps_code.svg',
+      src: '/preps_free.svg',
       description1: `Yes, it is 100% free to use! Our goal is to become the platform that'll guide our users towards career success. We plan to introduce our paid plans offering more features that will help your interview preps easier!`,
       description2: '',
     },
   ];
-  const [selectedQuestion, setSelectedQuestion] = useState<ISelected>(
+
+  const [selectedQuestion, setSelectedQuestion] = useState<ISelected | null>(
     questions[0]
   );
+
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   return (
-    <div className="main w-full flex  gap-[64px] py-[64px]">
-      <div className="w-1/3 tablet:w-15/36 h-full">
-        <div className="flex flex-col items-center justify-center gap-[64px] w-full h-full">
+    <div className="tablet:main w-full flex tablet:flex-row flex-col gap-[64px] py-[64px] h-full min-h-[900px] items-center">
+      <div className="w-full tablet:w-1/3 h-full">
+        <div className="flex flex-col items-start tablet:items-center justify-center gap-[64px] w-full h-full">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
             Bespoke Interview Prep. For anyone. From anywhere.
           </h1>
           <div className="flex flex-col gap-[16px] w-full">
-            {questions.map((question) => (
-              <button
-                onClick={() => {
-                  setIsTransitioning(true);
-                  setTimeout(() => {
-                    setSelectedQuestion(question);
-                    setIsTransitioning(false);
-                  }, 300);
-                }}
-                key={question.question}
-                className={`flex justify-between w-full px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:text-white hover:opacity-60 ${
-                  selectedQuestion.id === question.id
-                    ? 'opacity-100 bg-[#181C2E] text-white'
-                    : 'opacity-50'
-                }`}
-              >
-                <span className={`font-[400] text-[20px] leading-[40px]`}>
-                  {question.question}
-                </span>
-                <Image
-                  src="/rightArrow.svg"
-                  alt="arrow"
-                  width={6}
-                  height={12}
-                />
-              </button>
+            {questions.map((question, index) => (
+              <div key={question.question} className="flex flex-col">
+                <button
+                  onClick={() => {
+                    setIsTransitioning(true);
+                    setTimeout(() => {
+                      if (selectedQuestion?.id === question.id) {
+                        setSelectedQuestion(null);
+                      } else {
+                        setSelectedQuestion(question);
+                      }
+                      setIsTransitioning(false);
+                    }, 300);
+                  }}
+                  // key={question.question}
+                  className={`flex justify-between w-full px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:text-white hover:opacity-60 ${
+                    selectedQuestion?.id === question.id
+                      ? 'opacity-100 bg-[#181C2E] text-white'
+                      : 'opacity-50'
+                  }`}
+                >
+                  <span className={`font-[400] text-[20px] leading-[40px]`}>
+                    {question.question}
+                  </span>
+                  <Image
+                    src="/rightArrow.svg"
+                    alt="arrow"
+                    width={6}
+                    height={12}
+                    className={`${
+                      selectedQuestion?.id === question.id
+                        ? 'tablet:rotate-[0deg] rotate-[270deg]'
+                        : 'tablet:rotate-[0deg] rotate-[90deg]'
+                    } `}
+                  />
+                </button>
+                {selectedQuestion?.id === question.id && (
+                  <div className="flex tablet:hidden py-[32px]">
+                    <QuestionContent
+                      selectedQuestion={selectedQuestion}
+                      isTransitioning={isTransitioning}
+                    />
+                  </div>
+                )}
+              </div>
             ))}
           </div>
           <Link
@@ -104,45 +126,11 @@ const Fourth = () => {
           </Link>
         </div>
       </div>
-      <div
-        className={`flex-1  flex flex-col gap-[64px] w-full items-start h-full px-[64px] justify-start tablet:justify-center transition-all  ${
-          isTransitioning ? 'fade-out' : 'fade-in'
-        }`}
-      >
-        <Image
-          src={selectedQuestion.src}
-          alt={selectedQuestion.id}
-          width={320}
-          height={320}
-          priority
-          className="self-center"
+      <div className="tablet:flex hidden flex-1 w-full h-full">
+        <QuestionContent
+          selectedQuestion={selectedQuestion}
+          isTransitioning={isTransitioning}
         />
-        <div className="flex flex-col gap-[16px] tablet:max-h-[248px] max-h-[496px] overflow-scroll h-full">
-          <h1 className="font-[600] text-[24px] leading-[28px]">
-            {selectedQuestion.question}
-          </h1>
-          <div className="flex flex-col font-[400] space-y-[12px]">
-            <span className="text-[16px] leading-[24px] font-[400]">
-              {selectedQuestion.description1}
-            </span>
-            <span className="text-[16px] leading-[24px] font-[400] ">
-              {selectedQuestion.description2}
-            </span>
-            <span className="text-[16px] leading-[24px] font-[400] ">
-              {selectedQuestion?.description3}
-            </span>
-            {selectedQuestion.description4?.map((desc, index) => {
-              return (
-                <div
-                  key={index}
-                  className=" flex-col font-[200] leading-[24px] text-[16px] flex"
-                >
-                  <ul>{desc}</ul>
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -12,12 +12,7 @@ type InputRow = {
 export async function handleContactForm(
   prevState: FormState,
   formData: FormData
-  //  {
-  //   email: string;
-  //   message: InputRow[];
-  // }
 ): Promise<FormState> {
-  // formData.preventDefault(); // Prevents the default form submission
   const dataEmail = formData.get('email');
   const dataMessage = formData.get('message');
 
@@ -38,7 +33,6 @@ export async function handleContactForm(
     );
 
     // Handle the response from Formspree
-
     if (response.ok) {
       // Form submission was successful, handle accordingly
       // You could clear the form or show a success message

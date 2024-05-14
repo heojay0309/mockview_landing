@@ -9,7 +9,7 @@ const Third = () => {
     {
       id: 'reps',
       title: 'Flexible',
-      src: '/preps_dynamic.svg',
+      src: '/preps_flexible.svg',
       description:
         'Hop on a call with your AI interviewer at anytime, at anywhere',
     },
@@ -30,9 +30,9 @@ const Third = () => {
   ];
 
   return (
-    <main className="flex items-center justify-between w-full h-[804px] text-[32px] leading-[36px] font-[600]">
+    <main className="flex items-start tablet:items-center justify-between w-full tablet:main min-h-[900px] h-full text-[32px] leading-[36px] font-[600]">
       <div
-        className={`flex tablet:flex-row flex-col tablet:gap-0 gap-[128px] transition-all items-center w-full ease-out h-full  ${
+        className={`flex tablet:flex-row flex-col tablet:gap-0 gap-[64px] transition-all items-center w-full ease-out h-full  ${
           hovered && hovered !== null && ''
         }`}
       >
@@ -51,10 +51,10 @@ const Third = () => {
                 height={160}
                 width={160}
                 alt={section.title}
-                className={`ease-out duration-500 w-[80px] h-[80px] tablet:w-[160px] tablet:h-[160px] ${
+                className={`ease-out duration-500 w-[160px] h-[160px] tablet:w-[160px] tablet:h-[160px] ${
                   hovered &&
                   hovered === section.id &&
-                  'w-[160px] h-[160px] tablet:w-[320px] tablet:h-[320px] self-center'
+                  'w-[320px] h-[320px] tablet:w-[320px] tablet:h-[320px] self-center'
                 }`}
               />
               <div className="flex flex-col gap-[16px] text-center items-center w-full">
