@@ -32,9 +32,14 @@ const Fifth = () => {
         className="absolute self-end -z-20 pb-[32px]"
       />
       <div className="flex flex-col gap-[32px] items-center ">
-        <h1 className="font-[600] text-[64px] leading-[72px] text-center">
-          Let&apos;s Start Prepping.
-        </h1>
+        <div className="flex flex-col gap-[8px]">
+          <span className="text-[24px] font-[500] leading-[32px] text-center">
+            Success is a Choice.
+          </span>
+          <h1 className="font-[600] text-[64px] leading-[72px] text-center">
+            Let&apos;s Start Prepping.
+          </h1>
+        </div>
         <Link
           href="https://www.beta.preps-ai.com"
           className=" bg-[#2C588E] z-auto relative gap-[10px] overflow-hidden  px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 rounded-[4px] "

@@ -23,8 +23,7 @@ const Fourth = () => {
       src: '/preps_diamond.svg',
       description1:
         'Preps is a cutting-edge platform specifically designed to help software engineers prepare for technical interviews. At its core, Preps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies.',
-      description2:
-        'Using Preps, candidates can engage in live, interactive sessions with AI interviewers, tackling real-time coding challenges and discussing their approaches to solving complex algorithmic problems. These sessions are designed to replicate the dynamics of interviews conducted via video conferencing tools like Zoom or Google Meet, providing an immersive experience that prepares candidates for the pressures and expectations of actual tech interviews.',
+      description2: '',
     },
     {
       id: 'second',
@@ -64,8 +63,8 @@ const Fourth = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   return (
-    <div className="tablet:main w-full flex tablet:flex-row flex-col gap-[64px] py-[64px] h-full min-h-[900px] items-center">
-      <div className="w-full tablet:w-1/3 h-full">
+    <div className="tablet:main w-full flex tablet:flex-row flex-col gap-[64px] py-[64px] h-full min-h-[900px] items-center tablet:justify-center">
+      <div className="w-full tablet:w-1/3 tablet:min-w-[440px] laptop:min-w-[600px] h-full bg-[#06091E]  rounded-[32px] py-[64px] tablet:py-[128px] laptop:px-[64px] tablet:px-[32px]">
         <div className="flex flex-col items-start tablet:items-center justify-center gap-[64px] w-full h-full">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
             Bespoke Interview Prep. For anyone. From anywhere.
@@ -126,7 +125,7 @@ const Fourth = () => {
           </Link>
         </div>
       </div>
-      <div className="tablet:flex hidden flex-1 w-full h-full">
+      <div className="tablet:flex hidden flex-1 w-full h-full items-center justify-center ">
         <QuestionContent
           selectedQuestion={selectedQuestion}
           isTransitioning={isTransitioning}

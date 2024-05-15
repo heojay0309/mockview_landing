@@ -9,8 +9,8 @@ export default function Home() {
     <div className="flex flex-col px-[64px]">
       <Intro />
       <Second />
-      <Third />
       <Fourth />
+      <Third />
       <Fifth />
       <Sixth />
     </div>
