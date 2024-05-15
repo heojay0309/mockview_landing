@@ -33,12 +33,12 @@ const Fifth = () => {
       />
       <div className="flex flex-col gap-[32px] items-center ">
         <div className="flex flex-col gap-[8px]">
-          <span className="text-[24px] font-[500] leading-[32px] text-center">
-            Success is a Choice.
-          </span>
           <h1 className="font-[600] text-[64px] leading-[72px] text-center">
             Let&apos;s Start Prepping.
           </h1>
+          <span className="text-[24px] font-[500] leading-[32px] text-center">
+            Success is a Choice.
+          </span>
         </div>
         <Link
           href="https://www.beta.preps-ai.com"

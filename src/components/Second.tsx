@@ -5,7 +5,10 @@ import VideoComponentSkeleton from './video-component-skeleton';
 import Link from 'next/link';
 const Second = () => {
   return (
-    <main className="flex flex-col tablet:flex-row items-center gap-[64px] main tablet:max-h-[900px] w-full h-full tablet:py-[64px] laptop:py-[128px]">
+    <main
+      id={'learn'}
+      className="flex flex-col tablet:flex-row items-center gap-[64px] main tablet:max-h-[900px] w-full h-full tablet:py-[64px] laptop:py-[128px]"
+    >
       <section className="h-full w-full flex items-center justify-center">
         <Suspense fallback={<VideoComponentSkeleton />}>
           <VideoComponent />

@@ -277,7 +277,7 @@ const Sixth = () => {
           </div>
           <div className="flex gap-[16px] items-center">
             <span className="leading-[40px]">3</span>
-            <span className="opacity-50 leading-[24px] indent-4">
+            <span className="opacity-50 leading-[24px] indent-4 whitespace-nowrap">
               #input your Message
             </span>
           </div>

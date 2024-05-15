@@ -19,7 +19,7 @@ export default function PoliciesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full justify-between h-screen flex flex-col bg-[#000210]">
+    <div className="w-full justify-between h-screen flex flex-col">
       {children}
     </div>
   );

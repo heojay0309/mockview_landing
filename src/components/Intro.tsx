@@ -19,7 +19,7 @@ const Intro = () => {
       <section className="w-full h-full flex flex-col items-start justify-center gap-[16px]">
         <div className="flex flex-col gap-[32px] tablet:gap-[16px] tablet:max-w-[544px] w-full pt-[64px] tablet:pt-[0px]">
           <h1 className="font-[600] text-[40px] tablet:text-[56px] text-center tablet:text-start leading-[64px] tracking-[4%] tablet:max-w-none w-full">
-            Perfect Perfect and
+            Prepare Perfect and
             <span className="tablet:w-full w-full"> Present</span>
           </h1>
           <Image
@@ -45,21 +45,17 @@ const Intro = () => {
                   Start Prepping
                 </span>
               </Link>
-              <span className="opacity-60 text-[16px] leading-[24px] font-[600]">
+              <Link
+                href="#learn"
+                className="opacity-60 text-[16px] leading-[24px] font-[600]"
+              >
                 Learn More →
-              </span>
+              </Link>
             </div>
           </div>
         </div>
       </section>
       <section className="w-full h-full tablet:flex items-center justify-center hidden  ">
-        {/* <Image
-          src="/preps_hero.svg"
-          alt="prepsAI"
-          width={640}
-          height={386.44}
-          className="object-fill"
-        /> */}
         <Image
           src="/images/preps_platform.svg"
           alt="prepsAI"
