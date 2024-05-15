@@ -386,6 +386,33 @@
     scale: 1 1;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.spinIcon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: circle-icon 4s infinite ease-in-out;
+}
+
+.icon-container {
+  position: absolute;
+  /* top: 100%;
+  left: 100%; */
+  /* left: 0%; */
+  /* top: 0%; */
+  width: 506px;
+  height: 270px;
+  transform: translate(-50%, -50%);
+  animation: rotate 10s infinite linear;
+}
+
 @media (min-width: 640px) {
   .hero {
     opacity: 0;
@@ -523,16 +550,6 @@ Initial state of the title .title-enter {
   transform: translateY(10px);
   transition: opacity 0.5s, transform 0.5s;
 }
-/* @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-} */
-
 .cursor {
   position: absolute;
   width: 16px; /* Customize the width for a thicker caret */

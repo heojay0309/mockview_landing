@@ -136,19 +136,26 @@ const config: Config = {
       },
       animation: {
         'ping-slow': 'ping 2s infinite',
-        'bounce-slow': 'bounce 4s infinite ',
+        'bounce-normal': 'bounce 2s infinite ease-in',
+        'bounce-slow': 'bounce 1s infinite',
+        'bounce-little-slow': 'bounce 4s infinite ',
+        'bounce-very-slow': 'bounce 5s infinite',
         'spin-slow': 'spin 5s infinite',
         blink: 'blink 1s step-end infinite',
       },
       keyframes: {
         bounce: {
           '0%, 100%': {
-            transform: 'translateY(-10%)',
-            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
+            transform: 'translateY(0%)',
+            // 'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
           },
           '50%': {
-            transform: 'translateY(0)',
-            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
+            transform: 'translateY(-10%)',
+            // 'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '100%': {
+            transform: 'translateY(0%)',
+            // 'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
           },
         },
         blink: {

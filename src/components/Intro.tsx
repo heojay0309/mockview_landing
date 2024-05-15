@@ -1,7 +1,19 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Intro = () => {
+  const [bounceTurn, setBounceTurn] = useState(0);
+
+  setTimeout(() => {
+    if (bounceTurn === 5) {
+      setBounceTurn(0);
+      return;
+    }
+    setBounceTurn(bounceTurn + 1);
+  }, 1000);
+
   return (
     <main className="flex flex-col tablet:flex-row justify-between items-center gap-[32px] main tablet:py-[64px] h-full">
       <section className="w-full h-full flex flex-col items-start justify-center gap-[16px]">
@@ -40,14 +52,119 @@ const Intro = () => {
           </div>
         </div>
       </section>
-      <section className="w-full h-full tablet:flex items-center justify-center hidden">
-        <Image
+      <section className="w-full h-full tablet:flex items-center justify-center hidden  ">
+        {/* <Image
           src="/preps_hero.svg"
           alt="prepsAI"
           width={640}
           height={386.44}
           className="object-fill"
+        /> */}
+        <Image
+          src="/images/preps_platform.svg"
+          alt="prepsAI"
+          width={640}
+          height={386.44}
+          className="object-fill relative"
         />
+        <div className="w-[506px] h-[270px] rounded-full aspect-auto absolute ">
+          <Image
+            src="/images/ai.svg"
+            alt="prepsAI"
+            width={134.8}
+            height={180.55}
+            className={`object-fill absolute bottom-[70px] right-[-22px] ${
+              bounceTurn === 0 && 'animate-bounce-slow'
+            } ease-in-out`}
+          />
+          <Image
+            src="/images/pencil.svg"
+            alt="prepsAI"
+            width={122}
+            height={126.8}
+            className={`object-fill absolute bottom-[11px] right-[85px] ${
+              bounceTurn === 1 && 'animate-bounce-slow'
+            } ease-in-out`}
+          />
+          <Image
+            src="/images/screen.svg"
+            alt="prepsAI"
+            width={122}
+            height={123}
+            className={`object-fill absolute bottom-[135px] right-[78px] ${
+              bounceTurn === 2 && 'animate-bounce-slow'
+            } ease-in-out`}
+          />
+          <Image
+            src="/images/computer.svg"
+            alt="prepsAI"
+            width={101}
+            height={69.81}
+            className={`object-fill absolute bottom-[82px] left-[-30px] ease-in-out ${
+              bounceTurn === 3 && 'animate-bounce-slow'
+            }`}
+          />
+          <Image
+            src="/images/sound.svg"
+            alt="prepsAI"
+            width={109}
+            height={106.17}
+            className={`object-fill absolute top-[26px] left-[60px] ease-in-out ${
+              bounceTurn === 4 && 'animate-bounce-slow'
+            }`}
+          />
+          <Image
+            src="/images/speaker.svg"
+            alt="prepsAI"
+            width={109.14}
+            height={86.67}
+            className={`object-fill absolute bottom-[14px] left-[81px] ease-in-out ${
+              bounceTurn === 5 && 'animate-bounce-slow'
+            }`}
+          />
+          {/* <Image
+            src="/images/ai.svg"
+            alt="prepsAI"
+            width={134.8}
+            height={180.55}
+            className="object-fill absolute bottom-[70px] right-[-22px]"
+          />
+          <Image
+            src="/images/pencil.svg"
+            alt="prepsAI"
+            width={122}
+            height={126.8}
+            className="object-fill absolute bottom-[11px] right-[85px]"
+          />
+          <Image
+            src="/images/screen.svg"
+            alt="prepsAI"
+            width={122}
+            height={123}
+            className="object-fill absolute bottom-[135px] right-[78px]"
+          />
+          <Image
+            src="/images/computer.svg"
+            alt="prepsAI"
+            width={101}
+            height={69.81}
+            className="object-fill absolute bottom-[82px] left-[-30px]"
+          />
+          <Image
+            src="/images/sound.svg"
+            alt="prepsAI"
+            width={109}
+            height={106.17}
+            className="object-fill absolute top-[26px] left-[60px]"
+          />
+          <Image
+            src="/images/speaker.svg"
+            alt="prepsAI"
+            width={109.14}
+            height={86.67}
+            className="object-fill absolute bottom-[14px] left-[81px]"
+          /> */}
+        </div>
       </section>
     </main>
   );
