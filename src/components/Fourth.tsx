@@ -40,13 +40,19 @@ const Fourth = () => {
     },
     {
       id: 'third',
-      question: 'What are the simulations like?',
+      question: 'Does Preps support multilingual?',
       src: '/preps_code.svg',
-      description1: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview.`,
-      description2: `During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions.`,
-      description3:
-        'Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.',
+      description1: `We are only supporting English at the moment.`,
     },
+    // {
+    //   id: 'third',
+    //   question: 'What are the simulations like?',
+    //   src: '/preps_code.svg',
+    //   description1: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview.`,
+    //   description2: `During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions.`,
+    //   description3:
+    //     'Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.',
+    // },
     {
       id: 'fourth',
       question: 'Is Preps free to use?',

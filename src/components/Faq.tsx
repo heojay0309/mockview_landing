@@ -10,15 +10,6 @@ const Faq = ({}: {}) => {
       answer: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview. During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions. Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.`,
     },
     {
-      question: 'What kind of technical questions can I expect?',
-      answer: `You'll encounter a wide range of questions from data structures and algorithms, similar to those asked by top tech companies. We constantly update our questions bank to reflect the latest industry trends and standards.`,
-    },
-    {
-      question:
-        'Do I need any specific software or hardware to use Preps like how Zoom does?',
-      answer: `Nope, all you'll need is a stable internet connection and a webcam-enabled device. Our platform is web-based, so no additional software installation is required. We recommend you to use the Chrome browser for your optimal experience.`,
-    },
-    {
       question: 'How is the live coding challenge conducted?',
       answer: `Live coding challenges on Preps take place within an embedded IDE on our platform. You will write and execute code while explaining your approach to the AI interviewer, just as you would in a real interview setting.`,
     },
@@ -33,11 +24,6 @@ const Faq = ({}: {}) => {
         'Yes, Preps allows you to set the difficulty level of your mock interview to match your desired difficulty level of problems or the job role you are aiming for, ensuring that the practice you get is tailored to your needs.',
     },
     {
-      question: 'What if I face technical issues during the mock interview?',
-      answer:
-        'We provide a comprehensive support guide for common technical issues. If you encounter a problem not covered in the guide, our customer support team is available to assist you.',
-    },
-    {
       question: 'Is there a way to review past interviews?',
       answer:
         'No, currently we do not offer this feature. However, in the future, we will offer the feature to record and review your interviews. Preps will store the recordings of your past interviews, and you will be able to access them anytime. Reviewing past performances can be an effective way to track your progress and refine your interviewing skills.',
@@ -45,12 +31,6 @@ const Faq = ({}: {}) => {
     {
       question: 'Is it free to take mock interviews?',
       answer: `Yes, it is 100% free to use! Our goal is to become the platform that'll guide our users towards career success. We plan to introduce our paid plans offering more features that will help your interview preps easier!`,
-    },
-    {
-      question:
-        'Does Preps offer preparation for non-technical interview questions?',
-      answer:
-        'Currently, Preps specializes in technical interviews only. However, we are considering expanding our services to include non-technical interview preparation in the future.',
     },
     {
       question: 'What payment methods do you accept?',
