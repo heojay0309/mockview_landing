@@ -6,7 +6,7 @@ const Faq = ({}: {}) => {
         'PPreps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies.',
     },
     {
-      question: 'How does Preps simulate real interviews?',
+      question: 'How does it simulate real interviews?',
       answer: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview. During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions. Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.`,
     },
     {
