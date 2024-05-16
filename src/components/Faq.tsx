@@ -3,7 +3,7 @@ const Faq = ({}: {}) => {
     {
       question: 'What is Preps?',
       answer:
-        'Preps is a cutting-edge platform specifically designed to help software engineers prepare for technical interviews. At its core, Preps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies. Using Preps, candidates can engage in live, interactive sessions with AI interviewers, tackling real-time coding challenges and discussing their approaches to solving complex algorithmic problems. These sessions are designed to replicate the dynamics of interviews conducted via video conferencing tools like Zoom or Google Meet, providing an immersive experience that prepares candidates for the pressures and expectations of actual tech interviews.',
+        'PPreps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies.',
     },
     {
       question: 'How does Preps simulate real interviews?',

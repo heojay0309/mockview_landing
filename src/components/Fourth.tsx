@@ -22,12 +22,12 @@ const Fourth = () => {
       question: 'What is Preps?',
       src: '/preps_diamond.svg',
       description1:
-        'Preps is a cutting-edge platform specifically designed to help software engineers prepare for technical interviews. At its core, Preps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies.',
+        'Preps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies.',
       description2: '',
     },
     {
       id: 'second',
-      question: 'How does Preps work?',
+      question: 'How does it work?',
       src: '/preps_face.svg',
       description1: `We made prepping for your interviews as easy as 1, 2, 3`,
       description2: '',
@@ -40,22 +40,13 @@ const Fourth = () => {
     },
     {
       id: 'third',
-      question: 'Does Preps support multilingual?',
+      question: 'Does it support multilingual?',
       src: '/preps_code.svg',
       description1: `We are only supporting English at the moment.`,
     },
-    // {
-    //   id: 'third',
-    //   question: 'What are the simulations like?',
-    //   src: '/preps_code.svg',
-    //   description1: `Every mock interview simulates real-time communication, mimicking platforms like Zoom or Google Meet, and is designed to test your ability to respond under pressure, articulate your thoughts, and communicate effectively just as you would in an actual interview.`,
-    //   description2: `During the simulation, you'll face coding challenges that require not only correct solutions but also a clear explanation of your thought process. This part of the simulation helps sharpen your coding skills, improves your ability to think aloud, and enhances your problem-solving strategies under timed conditions.`,
-    //   description3:
-    //     'Our simulations are designed to be adaptive, catering to a wide range of experience levels from beginners to seasoned professionals.',
-    // },
     {
       id: 'fourth',
-      question: 'Is Preps free to use?',
+      question: 'Is it free to use?',
       src: '/preps_free.svg',
       description1: `Yes, it is 100% free to use! Our goal is to become the platform that'll guide our users towards career success. We plan to introduce our paid plans offering more features that will help your interview preps easier!`,
       description2: '',
