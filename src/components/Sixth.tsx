@@ -3,6 +3,9 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
 
 import { handleContactForm } from './action';
+import { Source_Code_Pro } from 'next/font/google';
+
+const source = Source_Code_Pro({ subsets: ['latin'] });
 
 interface IRowCounts {
   [key: number]: number;
@@ -229,7 +232,9 @@ const Sixth = () => {
   }
 
   return (
-    <div className="w-full max-w-[800px] h-full min-h-[436px] justify-center max-h-none gap-[32px] flex flex-col  py-[64px]">
+    <div
+      className={`${source.className} w-full max-w-[800px] h-full min-h-[436px] justify-center max-h-none gap-[32px] flex flex-col  py-[64px]`}
+    >
       <h1 className="font-[600] text-[48px] leading-[64px] tracking-[4%]">
         Contact Us
       </h1>
