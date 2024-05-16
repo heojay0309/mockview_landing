@@ -57,13 +57,13 @@ const Intro = () => {
       </section>
       <section className="w-full h-full tablet:flex items-center justify-center hidden  ">
         <Image
-          src="/images/preps_platform.svg"
+          src="/preps_hero.svg"
           alt="prepsAI"
           width={640}
           height={386.44}
           className="object-fill relative"
         />
-        <div className="w-[506px] h-[270px] rounded-full aspect-auto absolute ">
+        {/* <div className="w-[506px] h-[270px] rounded-full aspect-auto absolute ">
           <Image
             src="/images/ai.svg"
             alt="prepsAI"
@@ -117,8 +117,8 @@ const Intro = () => {
             className={`object-fill absolute bottom-[14px] left-[81px] ease-in-out ${
               bounceTurn === 5 && 'animate-bounce-slow'
             }`}
-          />
-          {/* <Image
+          /> */}
+        {/* <Image
             src="/images/ai.svg"
             alt="prepsAI"
             width={134.8}
@@ -160,7 +160,7 @@ const Intro = () => {
             height={86.67}
             className="object-fill absolute bottom-[14px] left-[81px]"
           /> */}
-        </div>
+        {/* </div> */}
       </section>
     </main>
   );
