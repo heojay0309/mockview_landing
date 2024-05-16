@@ -40,7 +40,7 @@ const Fourth = () => {
     },
     {
       id: 'third',
-      question: 'Does it support multilingual?',
+      question: 'Does it support multiple languages?',
       src: '/preps_code.svg',
       description1: `We are only supporting English at the moment.`,
     },

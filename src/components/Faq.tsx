@@ -14,6 +14,10 @@ const Faq = ({}: {}) => {
       answer: `Live coding challenges on Preps take place within an embedded IDE on our platform. You will write and execute code while explaining your approach to the AI interviewer, just as you would in a real interview setting.`,
     },
     {
+      question: 'Does it support multiple languages?',
+      answer: 'We are only supporting English at the moment.',
+    },
+    {
       question: 'How does the AI provide feedback on my performance?',
       answer:
         'Our AI system analyzes your code for correctness, efficiency, and style, as well as evaluates your problem-solving approach and communication skills. After the session, it generates a detailed feedback report highlighting areas of strength and opportunities for improvement.',
