@@ -25,24 +25,23 @@ const PolicyPage = () => {
       <h1 className="  leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Terms & Policies
       </h1>
-      <div className="border-b opacity-60"></div>
-      <section className="flex justify-between gap-[32px]  w-full h-full">
+      <div className="border-b opacity-30"></div>
+      <section className="flex justify-between gap-[32px] tablet:gap-[64px] w-full tablet:justify-start tablet:h-full h-1/3">
         {policies.map((el, index) => {
           return (
-            <>
-              <Link
-                href={el.url}
-                key={index}
-                className="border-[0.5px] rounded-md hover:bg-opacity-10 hover:bg-white border-gray-400 flex flex-col gap-[16px] p-[16px] tablet:h-[160px] justify-between"
-              >
-                <div className="font-[400] text-[18px] tablet:text-[24px] leading-[16px]">
-                  {el.title}
-                </div>
-                <div className="text-[14px] tablet:text-[16px] tablet:leading-[24px] text-left font-[200] leading-[16px] tracking-wider">
-                  {el.description}
-                </div>
-              </Link>
-            </>
+            <Link
+              href={el.url}
+              key={index}
+              className="border-[0.5px] rounded-md hover:bg-opacity-10 hover:bg-white border-cardBorder-dark flex flex-col gap-[16px] p-[16px] tablet:h-[320px] tablet:w-[320px] justify-between"
+            >
+              <div className="font-[400] text-[18px] tablet:text-[24px] leading-[16px]">
+                {el.title}
+              </div>
+              <div className="text-[14px] tablet:text-[16px] tablet:leading-[24px] text-left font-[200] leading-[16px] tracking-wider">
+                {el.description}
+              </div>
+              <div className=" h3">View More</div>
+            </Link>
           );
         })}
       </section>

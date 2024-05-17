@@ -7,7 +7,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   return (
-    <nav className="w-full px-[64px] py-[28px] relative">
+    <nav className="w-full tablet:px-[64px] px-[32px] py-[28px] relative">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex gap-[4px]">
           <h1 className=" text-[36px] leading-[24px] font-[700]">preps</h1>

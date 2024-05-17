@@ -4,9 +4,9 @@ const TermsOfUse = () => {
       <h1 className="leading-[64px] tracking-[4%] text-[48px] font-[600]">
         Terms of Service
       </h1>
-      <div className="border-b opacity-60"></div>
-      <section className="flex flex-row gap-[16px] w-full">
-        <div className="flex flex-col gap-[4px] w-1/5">
+      <div className="border-b opacity-30"></div>
+      <section className="flex flex-col tablet:flex-row gap-[16px] w-full">
+        <div className="flex tablet:flex-col tablet:w-1/5 w-full gap-[8px]">
           <h1 className="font-[500]">Last updated</h1>
           <span className="font-[200]">05/01/2024</span>
         </div>

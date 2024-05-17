@@ -249,7 +249,7 @@ const Sixth = () => {
         <div className=" flex flex-col font-[500] text-[24px] leading-[40px] ">
           <div className="flex gap-[16px] items-center">
             <span className="leading-[40px]">1</span>
-            <label className="opacity-50 leading-[24px] indent-4">
+            <label className="opacity-50 leading-[24px] indent-4 whitespace-nowrap">
               #input your Email
             </label>
           </div>
