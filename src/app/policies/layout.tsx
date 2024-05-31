@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  title: 'Terms & policies',
   openGraph: {
     title: 'Terms & policies',
     description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.

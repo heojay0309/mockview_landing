@@ -2,6 +2,7 @@ import Faq from '@/components/Faq';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  title: 'FAQ',
   openGraph: {
     title: 'FAQ',
     description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
