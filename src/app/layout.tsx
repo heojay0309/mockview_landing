@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     'leetcode',
     'software engineer',
     'developers',
+    'prepsai',
+    'preps ai',
+    'ai interview',
   ],
 };
 
