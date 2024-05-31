@@ -4,6 +4,7 @@ type policiesType = {
   description: string;
   url: string;
 };
+
 const PolicyPage = () => {
   const policies: policiesType[] = [
     {

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://preps-ai.com'),
   title: {
-    template: `Preps - %s`,
+    template: `%s | Preps`,
     default: 'Preps',
   },
   openGraph: {

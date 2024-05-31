@@ -1,3 +1,15 @@
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Terms of use',
+  openGraph: {
+    title: 'Terms of use',
+    description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
+      The new way of preparing for your technical interviews. Ditch the old way of doing algorithmic problems, and join Preps!`,
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 const TermsOfUse = () => {
   return (
     <div className="flex flex-col tablet:px-[64px] px-[32px] gap-[32px] py-[32px] ">

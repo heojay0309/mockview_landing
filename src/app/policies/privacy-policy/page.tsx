@@ -1,4 +1,16 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Privacy policy',
+  openGraph: {
+    title: 'Privacy policy',
+    description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
+      The new way of preparing for your technical interviews. Ditch the old way of doing algorithmic problems, and join Preps!`,
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 const PrivacyPolicy = () => {
   return (
