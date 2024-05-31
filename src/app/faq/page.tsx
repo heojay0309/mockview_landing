@@ -1,4 +1,16 @@
 import Faq from '@/components/Faq';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  openGraph: {
+    title: 'FAQ',
+    description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
+      The new way of preparing for your technical interviews. Ditch the old way of doing algorithmic problems, and join Preps!`,
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export default function FaqPage() {
   return (

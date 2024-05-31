@@ -10,8 +10,30 @@ import { Source_Code_Pro } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'preps',
-  description: 'Prepare Perfect and Present',
+  metadataBase: new URL('https://preps-ai.com'),
+  title: {
+    template: `Preps - %s`,
+    default: 'Preps',
+  },
+  openGraph: {
+    description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously. 
+      The new way of preparing for your technical interviews. Ditch the old way of doing algorithmic problems, and join Preps!`,
+    images: ['/introduction/TheNewWay.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  keywords: [
+    'interview',
+    'preps',
+    'interview preps',
+    'coding',
+    'technical interview',
+    'algo',
+    'leetcode',
+    'software engineer',
+    'developers',
+  ],
 };
 
 export default function RootLayout({

@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter, Source_Code_Pro } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
-
-import Navbar from '@/components/nav/Navbar';
-import Footer from '@/components/nav/Footer';
-import { Toaster } from '@/components/ui/toaster';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'preps',
-  description: 'Terms & policies',
+  openGraph: {
+    title: 'Terms & policies',
+    description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
+      The new way of preparing for your technical interviews. Ditch the old way of doing algorithmic problems, and join Preps!`,
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function PoliciesLayout({
