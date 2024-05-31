@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'FAQ',
+  description:
+    'Preps offers AI-powered mock interview simulations that closely resemble real-world technical interviews conducted at leading tech companies. How does it work?',
   openGraph: {
     title: 'FAQ',
     description: `Interview + Algos. Preparing for technical interviews and algorithms asynchronously.
