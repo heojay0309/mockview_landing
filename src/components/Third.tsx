@@ -39,7 +39,7 @@ const Third = () => {
         {sections.map((section) => (
           <div
             key={section.id}
-            className={`flex flex-col px-[32px] ${
+            className={`flex flex-col px-[32px]  ${
               hovered && hovered !== section.id ? ' w-1/3 ' : ' tablet:w-full'
             } justify-center gap-[16px] transition-all tablet:gap-[32px]  text-center relative group ease-out duration-[800ms] items-center`}
             onMouseEnter={() => setHovered(section.id)}

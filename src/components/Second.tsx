@@ -14,8 +14,8 @@ const Second = () => {
           <VideoComponent />
         </Suspense>
       </section>
-      <section className="flex flex-col gap-[32px] tablet:w-3/5 bg-[#06091E] rounded-[32px] px-[64px] justify-center h-full">
-        <div className="flex flex-col gap-[16px] ">
+      <section className="flex flex-col gap-[32px] tablet:w-3/5 bg-[#06091E] rounded-[32px] px-[64px] tablet:py-[0px] py-[16px] justify-center h-full">
+        <div className="flex flex-col gap-[16px] tablet:py-[0px] py-[16px]">
           <div className="font-[600] text-[32px] leading-[40px] flex flex-col gap-[4px]">
             <span className="text-[12px] leading-[16px]">Imitate Reality</span>
             Quality Preparation

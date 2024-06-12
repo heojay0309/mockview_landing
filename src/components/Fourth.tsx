@@ -62,7 +62,7 @@ const Fourth = () => {
   return (
     <div className="tablet:main w-full flex tablet:flex-row flex-col gap-[64px] py-[64px] h-full min-h-[900px] items-center tablet:justify-center">
       <div className="w-full tablet:w-1/3 tablet:min-w-[440px] laptop:min-w-[600px] h-full bg-[#06091E]  rounded-[32px] py-[64px] tablet:py-[128px] laptop:px-[64px] tablet:px-[32px]">
-        <div className="flex flex-col items-start tablet:items-center justify-center gap-[64px] w-full h-full">
+        <div className="flex flex-col items-start tablet:items-center justify-center gap-[64px] w-full h-full tablet:px-[0px] px-[16px]">
           <h1 className="font-[600] text-[32px] leading-[40px] max-w-[472px]">
             Bespoke Interview Prep. For anyone. From anywhere.
           </h1>
@@ -82,7 +82,7 @@ const Fourth = () => {
                     }, 300);
                   }}
                   // key={question.question}
-                  className={`flex justify-between w-full px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:text-white hover:opacity-60 ${
+                  className={`flex justify-between w-full text-start px-[16px] py-[4px] rounded-[4px] items-center hover:bg-[#181C2E] hover:text-white hover:opacity-60 ${
                     selectedQuestion?.id === question.id
                       ? 'opacity-100 bg-[#181C2E] text-white'
                       : 'opacity-50'
@@ -104,7 +104,7 @@ const Fourth = () => {
                   />
                 </button>
                 {selectedQuestion?.id === question.id && (
-                  <div className="flex tablet:hidden py-[32px]">
+                  <div className="flex tablet:hidden py-[32px] ">
                     <QuestionContent
                       selectedQuestion={selectedQuestion}
                       isTransitioning={isTransitioning}
