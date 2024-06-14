@@ -16,7 +16,7 @@ const Footer = () => {
               width={23.45}
               src={'/preps_footer.png'}
             />
-            <h1 className=" text-[20px] leading-[24px] font-[600] opacity-60">
+            <h1 className="text-[20px] leading-[24px] font-[600] opacity-60">
               Preps
             </h1>
           </Link>
