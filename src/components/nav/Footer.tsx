@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <nav className="relative tablet:px-[64px] tablet:py-[32px] h-[64px] w-full px-[32px]">
       <div className=" font-[600] leading-[24px] flex flex-row justify-between items-center  py-[16px]">
-        <div className="flex tablet:gap-[32px] tablet:flex-row flex-col gap-[8px] bg-red-300 items-center justify-center">
+        <div className="flex tablet:gap-[32px] tablet:flex-row flex-col gap-[8px] items-center justify-center">
           <Link
             href="/"
             className="flex gap-[4px] justify-center items-center self-start tablet:self-center"
