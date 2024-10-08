@@ -10,9 +10,7 @@ const Second = () => {
       className="flex flex-col snap-center tablet:flex-row items-center gap-[64px] main tablet:max-h-[900px] w-full h-full tablet:py-[64px] laptop:py-[128px]"
     >
       <section className="h-full w-full flex items-center justify-center">
-        <Suspense fallback={<VideoComponentSkeleton />}>
-          <VideoComponent />
-        </Suspense>
+        <VideoComponent />
       </section>
       <section className="flex flex-col gap-[32px] tablet:w-3/5 bg-[#06091E] rounded-[32px] px-[64px] tablet:py-[0px] py-[16px] justify-center h-full">
         <div className="flex flex-col gap-[16px] tablet:py-[0px] py-[16px]">
