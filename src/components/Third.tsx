@@ -30,7 +30,7 @@ const Third = () => {
   ];
 
   return (
-    <main className="flex items-start tablet:items-center justify-between w-full tablet:main min-h-[900px] h-full text-[32px] leading-[36px] font-[600]">
+    <main className="flex snap-center items-start tablet:items-center justify-between w-full tablet:main min-h-[900px] h-full text-[32px] leading-[36px] font-[600]">
       <div
         className={`flex tablet:flex-row flex-col tablet:gap-0 gap-[64px] transition-all items-center w-full ease-out h-full  ${
           hovered && hovered !== null && ''

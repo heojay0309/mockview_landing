@@ -23,7 +23,7 @@ const Fifth = () => {
   }, [faqToggle, contactToggle]);
 
   return (
-    <div className="main flex items-center justify-center relative">
+    <div className="main flex items-center snap-center justify-center relative">
       <Image
         src={'/preps_background.svg'}
         alt={'preps'}
@@ -44,12 +44,9 @@ const Fifth = () => {
           href="https://www.beta.preps-ai.com"
           className=" bg-[#2C588E] z-auto relative gap-[10px] overflow-hidden  px-[32px] border border-[#5D8EFE] items-center justify-center flex py-[8px] hover:bg-opacity-90 rounded-[4px] "
         >
-          <div className="flex overflow-hidden h-[160px] bg-blend-overlay mix-blend-overlay  items-center justify-center animate-spin-slow absolute px-[32px] py-[8px] w-[160px]">
-            <div className="bg-[#00F0FF]  blur-lg opacity-70 mix-blend-overlay  rounded-full h-[185px] w-[185px] circle-left overflow-clip "></div>
-            <div className="bg-[#0047FF]  blur-lg opacity-70 mix-blend-overlay  rounded-full h-[185px] w-[185px] circle-right overflow-clip"></div>
-            <span className="text-[16px] leading-[24px] font-[600] hidden">
-              Enter App
-            </span>
+          <div className="flex overflow-hidden h-[160px] bg-blend-overlay mix-blend-overlay items-center justify-center  absolute px-[32px] py-[8px] w-[160px]">
+            <div className="bg-[#00F0FF] blur-lg opacity-70 mix-blend-overlay rounded-full h-[185px] w-[185px] circle-left overflow-clip "></div>
+            <div className="bg-[#0047FF] blur-lg opacity-70 mix-blend-overlay rounded-full h-[185px] w-[185px] circle-right overflow-clip"></div>
           </div>
           <span className="text-[16px] leading-[24px] font-[600] z-auto">
             Enter App

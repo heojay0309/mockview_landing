@@ -6,7 +6,7 @@ import Fifth from '@/components/Fifth';
 import Sixth from '@/components/Sixth';
 export default function Home() {
   return (
-    <div className="flex flex-col tablet:px-[64px] px-[32px]">
+    <div className="flex flex-col tablet:px-[64px] px-[32px] snap-y">
       <Intro />
       <Second />
       <Fourth />

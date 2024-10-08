@@ -15,7 +15,7 @@ const Intro = () => {
   }, 1000);
 
   return (
-    <main className="flex flex-col tablet:flex-row justify-between items-center gap-[32px] main tablet:py-[64px] h-full">
+    <main className="flex snap-start flex-col tablet:flex-row justify-between items-center gap-[32px] main tablet:py-[64px] h-full">
       <section className="w-full h-full flex flex-col items-start justify-center gap-[16px]">
         <div className="flex flex-col gap-[32px] tablet:gap-[16px] tablet:max-w-[544px] w-full pt-[64px] tablet:pt-[0px]">
           <h1 className="font-[600] text-[40px] tablet:text-[56px] text-center tablet:text-start leading-[64px] tracking-[4%] tablet:max-w-none w-full">
