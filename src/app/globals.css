@@ -562,3 +562,55 @@ Initial state of the title .title-enter {
     visibility: hidden;
   }
 }
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@property --rangle {
+  syntax: '<angle>';
+  initial-value: -360deg;
+  inherits: false;
+}
+@keyframes circleRight {
+  from {
+    --angle: -360deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes circleLeft {
+  from {
+    --rangle: 360deg;
+  }
+  to {
+    --rangle: -360deg;
+  }
+}
+
+.background-gradient-left {
+  height: 185px;
+  width: 185px;
+  background-image: conic-gradient(
+    from var(--rangle),
+    #00f0ff,
+    #0047ff,
+    #00f0ff
+  );
+  animation: 5s circleLeft linear infinite;
+}
+
+.background-gradient-right {
+  height: 185px;
+  width: 185px;
+  background-image: conic-gradient(
+    from var(--angle),
+    #00f0ff,
+    #0047ff,
+    #00f0ff
+  );
+  animation: 5s circleRight linear infinite;
+}
