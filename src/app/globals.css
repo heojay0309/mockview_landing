@@ -600,7 +600,7 @@ Initial state of the title .title-enter {
     #0047ff,
     #00f0ff
   );
-  animation: 5s circleLeft linear infinite;
+  animation: 3s circleLeft linear infinite;
 }
 
 .background-gradient-right {
@@ -612,5 +612,5 @@ Initial state of the title .title-enter {
     #0047ff,
     #00f0ff
   );
-  animation: 5s circleRight linear infinite;
+  animation: 3s circleRight linear infinite;
 }
